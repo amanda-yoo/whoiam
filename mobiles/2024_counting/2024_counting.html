@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<div class="count_container">
+
+
+		<!-- top contents -->
+		<div class="count_top_contents">
+			<div class="mob_inner">
+				<!-- visual -->
+				<div class="count_visual_wrap">
+					<img src="/img/suneung/glory_honor/2024_GH_Count/img_top_visual.png" alt="">
+				</div>
+				<!-- // visual -->
+
+			<!-- score -->
+			<div class="score_wrap" id="js_score_wrap">
+				<!-- total count -->
+				<div class="total_score">
+					<div class="item">
+						<div class="tick" data-value="000000" data-did-init="setupFlipTot0">
+							<div data-repeat="true">
+								<span data-view="flip"></span>
+							</div>
+						</div>
+						<span id="crt_total_count"><%=fncGetPassCnt("2024", "1001,1002,1003,1004,1005,1006")%></span><!-- total count -->
+					</div>
+				</div>
+				<!-- // total count -->
+
+				<!-- sub count -->
+				<div class="sub_score">
+					<div class="item">
+						<div class="tick" data-value="000" data-did-init="setupFlipSub1">
+							<div data-repeat="true">
+								<span data-view="flip"></span>
+							</div>
+						</div>
+						<span id="crt_sub_count_1"><%=fncGetPassCnt("2024", "1001")%></span><!-- 의치한약수 count -->
+					</div>
+					<div class="item">
+						<div class="tick" data-value="000" data-did-init="setupFlipSub2">
+							<div data-repeat="true">
+								<span data-view="flip"></span>
+							</div>
+						</div>
+						<span id="crt_sub_count_2"><%=fncGetPassCnt("2024", "1002")%></span><!-- SKY카포 count -->
+					</div>
+					<div class="item">
+						<div class="tick" data-value="0000" data-did-init="setupFlipSub3">
+							<div data-repeat="true">
+								<span data-view="flip"></span>
+							</div>
+						</div>
+						<span id="crt_sub_count_3"><%=fncGetPassCnt("2024", "1003,1004")%></span><!-- 서성한이중경외시 count -->
+					</div>
+				</div>
+				<!-- // sub count -->
+			</div>
+			<!-- // score -->
+
+				<!-- text -->
+				<div class="top_txt_wrap" id="js_top_txt_wrap">
+					<div class="img_wrap">
+						<img src="/img/suneung/glory_honor/2024_GH_Count/img_txt1.png" alt="YOU ALL WINNER ITALLER">
+						<img src="/img/suneung/glory_honor/2024_GH_Count/img_txt2.png" alt="잇올이 선도하는 투명한 합격 데이터를 확인해보세요!">
+					</div>
+				</div>
+				<!-- // text -->
+			</div>
+		</div>
+		<div class="top_help_txt">
+			<div class="mob_inner">
+				<ul class="list_type_info">
+					<li>
+						<span>※</span>
+						<div>업데이트 : 2024년 4월 5일 오후 4시 기준 오프라인, 온라인 합산 기준</div>
+					</li>
+					<li>
+						<span>※</span>
+						<div>본 결과는 잇올 스파르타 재원생 및 잇올 랩과 잇올캠스터디 서비스 이용자 중 최종 합격증을 제출한 합격자 정보 기준으로 집계</div>
+					</li>
+					<li>
+						<span>※</span>
+						<div>본 명단은 중복 합격 표기 적용</div>
+					</li>
+					<li>
+						<span>※</span>
+						<div>합격증 : 합격증 및 합격을 증빙할 수 있는 모든 디지털 자료 포함</div>
+					</li>
+					<li>
+						<span>※</span>
+						<div>취합된 합격증을 포함한 모든 개인정보는 철저한 보안을 통해 관리되며, 외부노출 시 개인정보보호법에 저촉되지 않는 선에서 공개됩니다.</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- // top contents -->
+
+		<!-- banner -->
+		<!-- <div class="gh_banner">
+			<img src="/img/suneung/glory_honor/2024_GH_Count/gh_banner.png" alt="">
+		</div> -->
+		<!-- // banner -->
+
+		<% Response.Flush %>
+
+		<!-- table contents -->
+		<div class="count_table_contents">
+			<!-- table -->
+			<div class="hapgyuks_wrap_7" style="margin-bottom: 0; position: relative;">
+				<div class="hapgyuks_7">
+					<div style="text-align:left;">
+						<div id="id_PR_TERM" style="float:left; padding-right: 10px; display: none;"></div>
+						<div id="id_PMB_DIV"></div>
+					</div>
+
+					<div id="id_PR_PMB_1001_Loading" style="display:none; position:absolute;">
+						<img src="/img/common/loading.gif" width="50" alt="" align="middle" />
+					</div>
+					<div id="id_PR_PMB_1001" class="cls_PR_PMB" style="display:none;"></div>
+					<div id="id_PR_PMB_1001_Flag" style="display:none;"></div>
+
+					<div id="id_PR_PMB_1002_Loading" style="display:none; position:absolute;">
+						<img src="/img/common/loading.gif" width="50" alt="" align="middle" />
+					</div>
+					<div id="id_PR_PMB_1002" class="cls_PR_PMB" style="display:none;"></div>
+					<div id="id_PR_PMB_1002_Flag" style="display:none;"></div>
+
+					<div id="id_PR_PMB_1003_Loading" style="display:none; position:absolute;">
+						<img src="/img/common/loading.gif" width="50" alt="" align="middle" />
+					</div>
+					<div id="id_PR_PMB_1003" class="cls_PR_PMB" style="display:none;"></div>
+					<div id="id_PR_PMB_1003_Flag" style="display:none;"></div>
+
+					<div id="id_PR_PMB_1004_Loading" style="display:none; position:absolute;">
+						<img src="/img/common/loading.gif" width="50" alt="" align="middle" />
+					</div>
+					<div id="id_PR_PMB_1004" class="cls_PR_PMB" style="display:none;"></div>
+					<div id="id_PR_PMB_1004_Flag" style="display:none;"></div>
+
+					<div id="id_PR_PMB_1005_Loading" style="display:none; position:absolute;">
+						<img src="/img/common/loading.gif" width="50" alt="" align="middle" />
+					</div>
+					<div id="id_PR_PMB_1005" class="cls_PR_PMB" style="display:none;"></div>
+					<div id="id_PR_PMB_1005_Flag" style="display:none;"></div>
+
+					<div id="id_PR_PMB_1006_Loading" style="display:none; position:absolute;">
+						<img src="/img/common/loading.gif" width="50" alt="" align="middle" />
+					</div>
+					<div id="id_PR_PMB_1006" class="cls_PR_PMB" style="display:none;"></div>
+					<div id="id_PR_PMB_1006_Flag" style="display:none;"></div>
+				</div>
+			</div>
+			<!-- // table -->
+		</div>
+		<!-- // table contents -->
+	</div>
+</body>
+</html>

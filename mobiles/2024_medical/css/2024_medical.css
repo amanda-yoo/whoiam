@@ -1,0 +1,2517 @@
+/* =================================
+		2025 medical
+=================================*/
+
+/* ======================================== [ common ] ======================================== */
+html{
+	/* scroll-behavior: unset; */
+}
+/* common */
+.text_center{
+    text-align: center;
+}
+.img_wrap{
+    font-size: 0;
+    text-align: center;
+}
+.color_yellow{
+	color: #f6ab00 !important;
+}
+.color_lemon{
+	color: #ffdf95 !important;
+}
+.color_blue{
+	color: #197f9c !important;
+}
+.color_sky{
+	color: #92d3e6 !important;
+}
+.color_white{
+	color: #fff !important;
+}
+.color_purple{
+	color: #c792cd !important;
+}
+.color_red{
+	color: #c62929 !important;
+}
+
+/* button */
+a.btn, button.btn{
+	display: inline-block;
+	padding: 28px 20px;
+	border: 0;
+	border-radius: 10px;
+	font-size: 26px;
+	line-height: 1em;
+	font-weight: 700;
+	color: #fff;
+	box-sizing: border-box;
+	vertical-align: middle;
+	text-align: center;
+    text-decoration: none;
+}
+.btn_type1{
+	width: 240px;
+}
+.btn_type2{
+	width: 100%;
+	font-size: 32px;
+	padding: 34px 20px;
+}
+.btn_color1{
+	background-color: #f6ab00;
+	-webkit-text-shadow: 3px 3px 11px rgba(67,47,0,0.34);
+	text-shadow: 3px 3px 11px rgba(67,47,0,0.34);
+}
+.btn_color2{
+	background-color: #222;
+}
+.btn_color3{
+	background-color: #5099ae;
+}
+
+/* vod */
+.vod_wrap{
+    position: relative;
+	margin: 0 auto;
+}
+.vod_wrap:before,
+.vod_wrap:after{
+    display: block;
+    content: '';
+    position: absolute;
+    z-index: 2;
+}
+.vod_conbox{
+    overflow: hidden;
+    position: relative;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    height: 0;
+    padding-bottom: 56.25%;
+	padding-top: 30px;
+    border-radius: 18px;
+}
+.vod_conbox iframe{
+	z-index: 10;
+}
+.vod_conbox iframe,
+.vod_conbox object,
+.vod_conbox embed{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.vod_link_wrap{
+	overflow: hidden;
+	border-radius: 10px;
+}
+.vod_link_wrap a{
+	display: block;
+	position: relative;
+	width: 100%;
+	height: 100%;
+	font-size: 0;
+}
+.vod_link_wrap a:before{
+	display: block;
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.4);
+	background-image: url('/img/suneung/recruit/2025_medical/ico_vod_play.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 51px;
+}
+.vod_link_wrap a img{
+	width: 100%;
+	max-width: 100%;
+}
+
+/* list */
+.list_type_info{
+    padding: 0;
+}
+.list_type_info > li,
+.list_type_bar > li{
+    display: flex;
+    align-items: flex-start;
+}
+.list_type_info > li + li{
+    margin-top: 12px;
+}
+.list_type_info > li > span{
+    display: inline-block;
+    width: 15px;
+    padding-top: 2px;
+}
+.list_type_info > li > div{
+    width: calc(100% - 15px);
+    font-weight: 500;
+    word-break: keep-all;
+}
+.list_type_info > li p{
+    margin-top: 5px;
+}
+.list_type_bar > li{
+    position: relative;
+    padding-left: 15px;
+}
+.list_type_bar > li:before{
+    display: block;
+    content: '';
+    position: absolute;
+    top: 12px;
+    left: 0;
+    width: 6px;
+    height: 1px;
+    background-color: #333;
+}
+.list_type_info > li .list_type_bar{
+    margin-top: 5px;
+}
+
+.list_type_decimal{
+    padding-left: 25px;
+}
+.list_type_decimal li{
+    display: list-item;
+    list-style-type: decimal;
+}
+
+
+
+/* layout */
+.med_2025_contents{
+    overflow: hidden;
+}
+.med_2025_contents *{
+	color: #222;
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    box-sizing: border-box;
+	letter-spacing: -0.02em;
+}
+.med_2025_contents .med_inner{
+	position: relative;
+	max-width: 720px;
+	padding-left: 30px;
+	padding-right: 30px;
+	margin: 0 auto;
+}
+.med_sec{
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+}
+.item_wrap.type1{
+	-webkit-transform: translateY(-36px);
+	transform: translateY(-36px);
+}
+.item_wrap.type2{
+	position: relative;
+	padding-top: 150px;
+	padding-bottom: 150px;
+	text-align: center;
+}
+.item_wrap.type2:before{
+	display: block;
+	content: '';
+	position: absolute;
+	top: -88px;
+	left: 0;
+	width: 660px;
+	height: 90px;
+	background-repeat: no-repeat;
+	background-position: top center;
+	background-size: contain;
+}
+
+.bg_box{
+	padding: 90px 30px;
+	border-radius: 10px;
+}
+
+.footnote_wrap{
+	text-align: center;
+}
+.footnote_wrap p{
+	font-size: 14px;
+	line-height: 1.15em;
+	font-weight: 400;
+	word-break: keep-all;
+}
+.footnote{
+	display: block;
+	font-size: 14px !important;
+	font-weight: 300 !important;
+	word-break: keep-all;
+}
+
+
+
+/* ======================================== [ main section ] ======================================== */
+.btn_quick_form{
+	position: fixed;
+	top: 35%;
+	right: 5%;
+	z-index: 11;
+	width: 90px;
+	height: 90px;
+	animation: floatBanner 2s linear infinite;
+	opacity: 0;
+}
+.btn_quick_form img{
+	max-width: 100%;
+}
+@keyframes floatBanner{
+	50%{-webkit-transform: translateY(20px);transform: translateY(20px);}
+}
+.med_main_sec{
+	padding-bottom: 0;
+	background-image: url('/img/suneung/recruit/2025_medical/bg_main_sec.png');
+	background-position: center;
+}
+
+
+
+/* ======================================== [ section 1 / 9개월만에 표준점수 52점 상승 ] ======================================== */
+.med_sec_01{
+	padding-bottom: 34px;
+	background-image: url('/img/suneung/recruit/2025_medical/bg_sec_01.png');
+}
+.med_sec_01 .bg_box{
+	border: 3px solid #494949;
+	background-color: #2d2d2d;
+}
+.med_sec_01 .bg_box p{
+	color: #fff;
+}
+.med_sec_01 .item_top{
+	display: flex;
+	align-items: center;
+	padding-bottom: 80px;
+}
+.med_sec_01 .item_mid .desc_wrap{
+	background-image: url('/img/suneung/recruit/2025_medical/img_sec_01_line1.png');
+	background-repeat: no-repeat;
+	background-position: 80px 36px;
+}
+.med_sec_01 .item_btm .desc_wrap{
+	background: url('/img/suneung/recruit/2025_medical/img_sec_01_line2.png');
+	background-repeat: no-repeat;
+	background-position: 18px 36px;
+}
+.med_sec_01 .item_btm .vod_wrap{
+	margin-top: 20px;
+}
+/* .med_sec_01 .item_btm .vod_link_wrap:before{
+	display: block;
+	content: '';
+	position: absolute;
+	z-index: 1;
+	top: 42px;
+	right: 100px;
+	width: 257px;
+	height: 126px;
+	background-image: url('/img/suneung/recruit/2025_medical/img_sec_01_btm_bubble.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+} */
+.med_sec_01 .item_btm .item_num_wrap{
+	padding-bottom: 0;
+}
+
+.item_num_wrap{
+	text-align: center;
+}
+.item_num_wrap.type1{
+	padding-top: 116px;
+	padding-bottom: 100px;
+	border-top: 3px solid #434343;
+}
+.item_num_wrap.type1 .num_tit_wrap{
+	margin-bottom: 80px;
+}
+.item_num_wrap.type1 .num_tit_wrap .num{
+	display: inline-block;
+	width: 52px;
+	height: 52px;
+	padding: 14px 10px;
+	border-radius: 50%;
+	background-color: #fff;
+	font-size: 23px;
+	font-weight: 600;
+	color: #2d2d2d;
+	text-align: center;
+}
+.item_num_wrap.type1 .num_tit_wrap .tit{
+	display: block;
+	margin-top: 50px;
+}
+.item_num_wrap.type1 .num_tit_wrap .tit,
+.item_num_wrap.type1 .num_tit_wrap .tit strong{
+	font-size: 60px;
+	line-height: 1.25em;
+	font-weight: 800;
+}
+.item_num_wrap.type1 .num_tit_wrap .desc_wrap{
+	margin-top: 50px;
+}
+.item_num_wrap.type1 .num_tit_wrap .desc_wrap p{
+	font-size: 34px;
+	line-height: 1.5em;
+	font-weight: 500;
+}
+.item_num_wrap.type1 .num_tit_wrap .desc_wrap strong{
+	font-size: 34px;
+	font-weight: 800;
+}
+
+
+
+/* ======================================== [ section 2 / 의대 정원 2000명 확대 ] ======================================== */
+.med_sec_02{
+	padding-bottom: 220px;
+	background-color: #f6ab00;
+}
+.med_sec_02 .bg_box{
+	background-color: #ede5d2;
+}
+.med_sec_02 .item_num_wrap.type1{
+	border-color: #d0c5ac;
+}
+.med_sec_02 .item_num_wrap.type1 .num_tit_wrap .num{
+	background-color: #222;
+	color: #fff;
+}
+
+.med_sec_02 .item_mid .tit{
+	padding: 18px 0 6px;
+	background-image: url('/img/suneung/recruit/2025_medical/img_sec_02_line1.png');
+	background-repeat: no-repeat;
+	background-position: right 52px bottom 0;
+}
+.med_sec_02 .item_mid .item_num_wrap{
+	padding-top: 0;
+	border-top: 0;
+}
+.med_sec_02 .item_mid .footnote_wrap{
+	margin-top: 46px;
+}
+
+.med_sec_02 .item_btm .tit{
+	background-image: url('/img/suneung/recruit/2025_medical/img_sec_02_line2.png');
+	background-repeat: no-repeat;
+	background-position: left 78px bottom 0;
+}
+.med_sec_02 .item_btm .item_num_wrap.type1{
+	padding-bottom: 0;
+}
+.med_sec_02 .item_btm .img_wrap{
+	position: relative;
+}
+.med_sec_02 .item_btm .footnote_wrap{
+	margin-top: 25px;
+}
+
+
+
+/* ======================================== [ section 3 / 지역인재 ] ======================================== */
+.med_sec_03{
+	background-color: #2d2d2d;
+}
+.med_sec_03 .item_wrap:before{
+	background-image: url('/img/suneung/recruit/2025_medical/img_sec_03_label.png');
+}
+.med_sec_03 .item_top .con_wrap{
+	margin-top: 75px;
+}
+.med_sec_03 .item_mid{
+	margin-top: 94px;
+}
+
+.item_tit_wrap{
+	text-align: center;
+}
+.item_tit_wrap .desc_wrap{
+	margin-top: 60px;
+	text-align: center;
+}
+.item_tit_wrap .desc_wrap p{
+	font-size: 24px;
+	font-weight: 500;
+	color: #fff;
+}
+.item_tit_wrap .desc_wrap span{
+	display: inline-block;
+	margin-top: 10px;
+	font-size: 20px;
+	line-height: 1.35em;
+	font-weight: 300;
+	color: #9b9b9b;
+}
+
+.med_sec_03 .note_tit_wrap .tit{
+	position: relative;
+}
+.med_sec_03 .note_tit_wrap .tit:before{
+	display: block;
+	content: '';
+	position: absolute;
+	top: -35px;
+	right: -75px;
+	width: 70px;
+	height: 66px;
+	background-image: url('/img/suneung/recruit/2025_medical/ico_doodle.png');
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+.med_sec_03 .note_list_wrap li:nth-child(1) .list_img span{
+	padding-left: 10px;
+	padding-right: 10px;
+	background-image: url('/img/suneung/recruit/2025_medical/img_sec_03_mid_icon1.png');
+}
+.med_sec_03 .note_list_wrap li:nth-child(2) .list_img span{
+	background-image: url('/img/suneung/recruit/2025_medical/img_sec_03_mid_icon2.png');
+}
+.med_sec_03 .note_list_wrap li:nth-child(3) .list_img span{
+	background-image: url('/img/suneung/recruit/2025_medical/img_sec_03_mid_icon3.png');
+}
+.med_sec_03 .note_list_wrap li:nth-child(4) .list_img span{
+	background-image: url('/img/suneung/recruit/2025_medical/img_sec_03_mid_icon4.png');
+}
+
+.med_sec_03 .note_list_wrap li:nth-child(1) .list_con{
+	background-image: url('/img/suneung/recruit/2025_medical/img_sec_03_line1.png');
+	background-position: 130px 118px;
+}
+.med_sec_03 .note_list_wrap li:nth-child(2) .list_con{
+	background-image: url('/img/suneung/recruit/2025_medical/img_sec_03_line2.png');
+	background-position: 50px 118px;
+}
+.med_sec_03 .note_list_wrap li:nth-child(3) .list_con{
+	padding-right: 42px;
+	background-image: url('/img/suneung/recruit/2025_medical/img_sec_03_line3.png');
+	background-position: 48px 50px;
+}
+.med_sec_03 .note_list_wrap li:nth-child(4) .list_con{
+	background-image: url('/img/suneung/recruit/2025_medical/img_sec_03_line4.png');
+	background-position: 24px 118px;
+}
+
+.item_note_wrap{
+	border-radius: 10px;
+}
+.item_note_wrap *{
+	color: #fff;
+}
+.item_note_wrap + .item_btm{
+	margin-top: 20px;
+}
+.item_note{
+	position: relative;
+	padding: 140px 30px 80px 27px;
+	border-radius: 10px;
+}
+.item_note:before,
+.item_note:after{
+	display: block;
+	content: '';
+	position: absolute;
+	left: -13px;
+	width: 44px;
+	height: 198px;
+	background-repeat: no-repeat;
+	background-position: top left;
+	background-size: contain;
+}
+.item_note:before{
+	top: 120px;
+}
+.item_note:after{
+	bottom: 380px;
+}
+
+
+.item_note_wrap.type1 .item_note{
+	background-color: #414141;
+}
+.item_note_wrap.type1 .item_note:before,
+.item_note_wrap.type1 .item_note:after{
+	background-image: url('/img/suneung/recruit/2025_medical/ico_note_bg1.png');
+}
+.item_note_wrap.type1 .list_con p{
+	color: #cdcdcd;
+}
+
+.item_note_wrap.type2 .item_note{
+	padding: 0;
+	background-color: #19657b;
+}
+.item_note_wrap.type2 .item_note:before, 
+.item_note_wrap.type2 .item_note:after{
+	background-image: url('/img/suneung/recruit/2025_medical/ico_note_bg2.png');
+}
+.item_note_wrap.type2 .note_tit_wrap{
+	padding: 130px 40px 80px 40px;
+	margin-bottom: 0;
+	background-color: #358aa2;
+	border-radius: 10px 10px 0 0;
+}
+.item_note_wrap.type2 .item_note .con_wrap{
+	padding: 80px 40px 80px 40px;
+}
+
+.note_tit_wrap{
+	margin-bottom: 48px;
+	text-align: center;
+}
+.note_tit_wrap .tit{
+	font-size: 60px;
+	line-height: 1.2em;
+	font-weight: 800;
+}
+.note_tit_wrap p{
+	margin-top: 10px;
+	font-size: 34px;
+	line-height: 1.5em;
+	font-weight: 500;
+}
+
+.note_list_wrap{
+	margin-top: 100px;
+}
+.note_list_wrap li{
+	text-align: center;
+}
+.note_list_wrap li + li{
+	margin-top: 60px;
+	padding-top: 72px;
+	background: url('/img/suneung/recruit/2025_medical/img_sec_04_mid_dash.png') no-repeat top center / contain;
+}
+.note_list_wrap .list_img{
+	text-align: center;
+}
+.note_list_wrap .list_img span{
+	display: inline-block;
+	padding-top: 100px;
+	background-position: top center;
+	background-repeat: no-repeat;
+	font-size: 30px;
+	font-weight: 600;
+}
+.note_list_wrap .list_con{
+	padding-top: 48px;
+	background-repeat: no-repeat;
+}
+.note_list_wrap .list_con span,
+.note_list_wrap .list_con strong{
+	font-size: 50px;
+	line-height: 1.3em;
+	font-weight: 800;
+}
+.note_list_wrap .list_con p{
+	margin-top: 26px;
+	font-size: 34px;
+	line-height: 1.3em;
+	font-weight: 500;
+}
+.note_list_wrap .footnote{
+	margin-top: 20px;
+	color: #cdcdcd;
+}
+.note_list_wrap .btn_wrap{
+	margin-top: 32px;
+}
+
+
+.review_wrap .btn_wrap{
+	margin-top: 40px;
+}
+
+
+
+/* ======================================== [ section 4 / N수/반수/직장인 ] ======================================== */
+.med_sec_04{
+	background-image: url('/img/suneung/recruit/2025_medical/bg_sec_04.png');
+}
+.med_sec_04 .item_wrap{
+	padding-top: 70px;
+}
+.med_sec_04 .item_wrap:before{
+	background-image: url('/img/suneung/recruit/2025_medical/img_sec_04_label.png');
+}
+.med_sec_04 .item_tit_wrap{
+	position: relative;
+}
+.med_sec_04 .vod_wrap + .item_tit_wrap{
+	margin-top: 110px;
+}
+.med_sec_04 .item_top .vod_wrap{
+	margin-top: 45px;
+}
+
+.med_sec_04 .item_mid{
+	margin-top: 100px;
+}
+.med_sec_04 .note_tit_wrap .desc_wrap{
+	position: relative;
+	margin-top: 60px;
+}
+.med_sec_04 .note_tit_wrap .desc_wrap:before{
+	display: block;
+	content: '';
+	position: absolute;
+	top: -10px;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+	width: 487px;
+	height: 218px;
+	background: url('/img/suneung/recruit/2025_medical/img_sec_04_mid_stamp.png') no-repeat center / contain;
+}
+.med_sec_04 .note_tit_wrap .desc_wrap ul{
+	background: url('/img/suneung/recruit/2025_medical/img_sec_04_mid_dash.png') no-repeat top center / contain;
+}
+.med_sec_04 .note_tit_wrap .desc_wrap li{
+	padding: 10px 0;
+	padding-left: 46px;
+	background: url('/img/suneung/recruit/2025_medical/img_sec_04_mid_dash.png') no-repeat bottom center / contain;
+	text-align: left;
+}
+.med_sec_04 .note_tit_wrap .desc_wrap li:nth-child(-n+3){
+	height: 70px;
+}
+.med_sec_04 .note_tit_wrap .desc_wrap p{
+	margin-top: 0;
+	padding-left: 35px;
+	background-image: url('/img/suneung/recruit/2025_medical/ico_check_yellow.png');
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-size: 22px;
+}
+
+.med_sec_04 .note_list_wrap{
+	margin-top: 0;
+}
+.med_sec_04 .note_list_wrap li:nth-child(1) .list_img span{
+	background-image: url('/img/suneung/recruit/2025_medical/img_sec_04_mid_icon1.png');
+}
+.med_sec_04 .note_list_wrap li:nth-child(2) .list_img span{
+	background-image: url('/img/suneung/recruit/2025_medical/img_sec_04_mid_icon2.png');
+}
+.med_sec_04 .note_list_wrap li:nth-child(3) .list_img span{
+	background-image: url('/img/suneung/recruit/2025_medical/img_sec_04_mid_icon3.png');
+}
+.med_sec_04 .note_list_wrap li:nth-child(1) .list_con{
+	background-image: url('/img/suneung/recruit/2025_medical/img_sec_04_line1.png');
+	background-position: right 100px top 42px;
+}
+.med_sec_04 .note_list_wrap li:nth-child(2) .list_con{
+	background-image: url('/img/suneung/recruit/2025_medical/img_sec_04_line2.png');
+	background-position: 80px 40px;
+}
+.med_sec_04 .note_list_wrap li:nth-child(3) .list_con{
+	background-image: url('/img/suneung/recruit/2025_medical/img_sec_04_line3.png');
+	background-position: 28px 112px;
+}
+
+
+.note_list_wrap.type2 .list_img span{
+	padding-top: 124px;
+	background-position: top center;
+}
+.note_list_wrap.type2 .list_con{
+	padding-top: 55px;
+}
+.note_list_wrap.type2 .btn_wrap{
+	margin-top: 55px;
+}
+.note_list_wrap.type2 .btn_wrap .btn + .btn{
+	margin-left: 30px;
+}
+
+.review_wrap.n2 .review_conbox{
+	margin-top: 30px;
+}
+.review_wrap.n2 .review_conbox:first-child{
+	margin-top: 0;
+}
+
+
+
+
+/* ======================================== [ section 5 / 고3/수시 ] ======================================== */
+.med_sec_05{
+	background-color: #f6ab00;
+}
+.med_sec_05 .item_wrap:before{
+	background-image: url('/img/suneung/recruit/2025_medical/img_sec_05_label.png');
+}
+.med_sec_05 .item_mid{
+	margin-top: 80px;
+}
+.med_sec_05 .item_note{
+	padding-bottom: 90px;
+}
+.med_sec_05 .item_note_wrap.type1 .item_note:before{
+	top: 580px;
+}
+.med_sec_05 .item_note_wrap.type1 .item_note:before, 
+.med_sec_05 .item_note_wrap.type1 .item_note:after{
+	background-image: url('/img/suneung/recruit/2025_medical/ico_note_bg3.png');
+}
+.med_sec_05 .note_list_wrap li .list_img span{
+	padding-top: 124px;
+	background-position: top center;
+}
+.med_sec_05 .note_list_wrap li:nth-child(1) .list_img span{
+	background-image: url('/img/suneung/recruit/2025_medical/img_sec_05_mid_icon1.png');
+}
+.med_sec_05 .note_list_wrap li:nth-child(2) .list_img span{
+	background-image: url('/img/suneung/recruit/2025_medical/img_sec_05_mid_icon2.png');
+}
+.med_sec_05 .note_list_wrap li:nth-child(3) .list_img span{
+	background-image: url('/img/suneung/recruit/2025_medical/img_sec_05_mid_icon3.png');
+}
+
+.med_sec_05 .note_list_wrap li:nth-child(1) .list_con{
+	background-image: url('/img/suneung/recruit/2025_medical/img_sec_05_line1.png');
+	background-position: 42px 34px;
+}
+.med_sec_05 .note_list_wrap li:nth-child(2) .list_con{
+	background-image: url('/img/suneung/recruit/2025_medical/img_sec_05_line2.png');
+	background-position: 140px 24px;
+}
+.med_sec_05 .note_list_wrap li:nth-child(3) .list_con{
+	background-image: url('/img/suneung/recruit/2025_medical/img_sec_05_line3.png');
+	background-position: right 86px bottom 66px;
+}
+
+
+/* ======================================== [ section 6 / 잇올랩 1 - 전국 빅데이터 DB ] ======================================== */
+.med_sec_06{
+	position: relative;
+	padding: 120px 0 110px;
+	background-color: #f6ab00;
+}
+.med_sec_06:before{
+	display: block;
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 1377px;
+	background: url('/img/suneung/recruit/2025_medical/bg_sec_06.png') no-repeat center / cover;
+}
+.med_sec_06 .item_tit_wrap .desc_wrap{
+	margin-top: 0;
+	margin-bottom: 10px;
+	text-align: right;
+}
+.med_sec_06 .item_btm{
+	margin-top: 120px;
+}
+.med_sec_06 .item_btm .tit{
+	background-image: url('/img/suneung/recruit/2025_medical/tit_sec_06_2_bg.png');
+	background-size: contain;
+}
+.med_sec_06 .item_btm .item_num_wrap .num_tit_wrap{
+	margin-bottom: 0;
+}
+.med_sec_06 .item_btm .item_num_wrap .num_tit_wrap .tit{
+	margin-bottom: 0;
+}
+.med_sec_06 .review_wrap .review_conbox{
+	margin-top: 20px;
+}
+
+.item_num_wrap.type2 .num_tit_wrap{
+	margin-bottom: 60px;
+	text-align: center;
+}
+.item_num_wrap.type2 .num_tit_wrap .tit{
+	display: inline-block;
+	padding: 20px 72px;
+	margin-bottom: 50px;
+	color: #fff;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.item_num_wrap.type2 .num_tit_wrap .tit,
+.item_num_wrap.type2 .num_tit_wrap .tit span{
+	font-size: 40px;
+	font-weight: 700;
+}
+
+
+
+/* ======================================== [ section 7 / 잇올랩 2 - 잇올랩 계산기 ] ======================================== */
+.med_sec_07{
+	padding: 140px 0 130px;
+	background-color: #2d2d2d;
+}
+.med_sec_07 .item .tit{
+	background-image: url('/img/suneung/recruit/2025_medical/tit_sec_07_bg.png');
+	background-size: contain;
+}
+.med_sec_07 .num_tit_wrap{
+	position: relative;
+}
+.med_sec_07 .num_tit_wrap:before{
+	display: block;
+	content: '';
+	position: absolute;
+	top: 25px;
+	right: -10px;
+	width: 125px;
+	height: 94px;
+	background: url('/img/suneung/recruit/2025_medical/img_sec_07_shot.png') no-repeat center / contain;
+}
+.med_sec_07 .num_tit_wrap .footnote_wrap{
+	margin-top: 30px;
+}
+.med_sec_07 .num_tit_wrap .footnote_wrap p{
+	color: #b0b0b0;
+}
+
+.sc_list_wrap{
+	position: relative;
+	padding: 0 36px;
+	margin-top: 80px;
+}
+.med_sec .swiper{
+	height: auto;
+	padding-bottom: 36px;
+}
+.med_sec .swiper-slide{
+	background: none;
+}
+.med_sec .btn_arr{
+	display: block;
+	content: '';
+	position: absolute;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+	width: 23px;
+	height: 41px;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+.med_sec .arr_prev{
+	left: 0;
+	background-image: url('/img/suneung/recruit/2025_medical/ico_swiper_arrow_prev.png');
+}
+.med_sec .arr_next{
+	right: 0;
+	background-image: url('/img/suneung/recruit/2025_medical/ico_swiper_arrow_next.png');
+}
+.med_sec .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, 
+.med_sec .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet{
+	margin: 0 6px;
+}
+.med_sec .swiper-pagination-bullets{
+	text-align: center;
+}
+.med_sec .swiper-pagination-bullet{
+	width: 14px;
+	height: 14px;
+	background-color: #fff;
+	opacity: 1;
+}
+.med_sec .swiper-pagination-bullet-active{
+	background-color: #f6ab00;
+}
+
+
+
+/* ======================================== [ section 8 / 잇올랩 3 - 4단계 밀착 관리 ] ======================================== */
+.med_sec_08{
+	padding: 140px 0 130px;
+	background-image: url('/img/suneung/recruit/2025_medical/bg_sec_08.png');
+}
+.med_sec_08 .num_tit_wrap{
+	position: relative;
+}
+.med_sec_08 .num_tit_wrap:before{
+	display: block;
+	content: '';
+	position: absolute;
+	top: 28px;
+	left: -18px;
+	width: 680px;
+	height: 493px;
+	background-image: url('/img/suneung/recruit/2025_medical/tit_sec_08_obj.png');
+	background-size: contain;
+}
+.med_sec_08 .item .tit{
+	background-image: url('/img/suneung/recruit/2025_medical/tit_sec_08_bg.png');
+	background-size: contain;
+	text-shadow: 3px 0 18px #514730;
+}
+.med_sec_08 .con_wrap{
+	margin-top: 100px;
+}
+
+.care_conbox + .care_conbox{
+	margin-top: 70px;
+}
+.care_tit{
+	width: 476px;
+	padding: 15px 0;
+	background: url('/img/suneung/recruit/2025_medical/img_sec_08_care_tit.png') no-repeat top left / contain;
+	text-align: left;
+}
+.care_tit span{
+	display: inline-block;
+	padding-left: 30px;
+	font-size: 34px;
+	font-weight: 600;
+	color: #fff;
+}
+.care_con{
+	padding: 60px 30px;
+	padding-bottom: 240px;
+	background-color: #fff;
+	background-repeat: no-repeat;
+	background-position: right 30px bottom 10px;
+	border-radius: 0 10px 10px 10px;
+	text-align: left;
+}
+.care_con strong{
+	font-size: 50px;
+	line-height: 1.3em;
+	font-weight: 800;
+}
+.care_con ul{
+	margin-top: 45px;
+}
+.care_con ul li{
+	position: relative;
+	padding-left: 32px;
+	font-size: 32px;
+	line-height: 1.4em;
+	font-weight: 500;
+	letter-spacing: -0.03em;
+	word-break: keep-all;
+}
+.care_con ul li:before{
+	display: block;
+	content: '';
+	position: absolute;
+	top: 8px;
+	left: 0;
+	width: 19px;
+	height: 23px;
+	background-image: url('/img/suneung/recruit/2025_medical/ico_check_sky.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+.care_con ul li + li{
+	margin-top: 5px;
+}
+.care_con .footnote_wrap{
+	margin-top: 24px;
+	text-align: left;
+}
+.care_conbox:nth-child(1) .care_con{
+	background-image: url('/img/suneung/recruit/2025_medical/img_sec_08_care1.png');
+}
+.care_conbox:nth-child(2) .care_con{
+	background-image: url('/img/suneung/recruit/2025_medical/img_sec_08_care2.png');
+}
+.care_conbox:nth-child(4) .care_con{
+	padding-bottom: 280px;
+	background-image: url('/img/suneung/recruit/2025_medical/img_sec_08_care3.png');
+}
+.care_conbox:nth-child(5) .care_con{
+	padding-bottom: 280px;
+	background-image: url('/img/suneung/recruit/2025_medical/img_sec_08_care4.png');
+}
+.care_conbox + .img_wrap{
+	margin-top: 20px;
+}
+.img_wrap + .care_conbox{
+	margin-top: 56px;
+}
+.care_list_wrap + .btn_wrap{
+	margin-top: 52px;
+}
+
+
+
+/* ======================================== [ section 9 / 의대관 상품 안내 ] ======================================== */
+.med_sec_09{
+	padding-bottom: 30px;
+	background-color: #ded3be;
+}
+.med_sec_09 .bg_box{
+	position: relative;
+	padding: 72px 70px 45px;
+	border: 3px solid #cfc3ab;
+	background-color: #fff;
+}
+.med_sec_09 .bg_box:before{
+	display: block;
+	content: '';
+	position: absolute;
+	top: -17px;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+	width: 158px;
+	height: 38px;
+	background: url('/img/suneung/recruit/2025_medical/img_sec_09_clip.png') no-repeat top center / contain;
+}
+.med_sec_09 .bg_box.apply_fin:after{
+	display: block;
+	content: '';
+	position: absolute;
+	top: 30%;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+	width: 80%;
+	height: 307px;
+	background: url('/img/suneung/recruit/2025_medical/img_fin_stamp1.png') no-repeat center / contain;
+}
+.med_sec_09 .tit_wrap{
+	text-align: center;
+}
+.med_sec_09 .tit_wrap .tit{
+	font-size: 50px;
+	font-weight: 800;
+}
+.med_sec_09 .con_wrap{
+	margin-top: 52px;
+}
+.med_sec_09 .info_wrap dl + dl{
+	margin-top: 26px;
+}
+.med_sec_09 .info_wrap dt{
+	display: inline-block;
+	padding: 8px 26px;
+	border-radius: 10px;
+	background-color: #f6ab00;
+	font-size: 28px;
+	font-weight: 700;
+	color: #fff;
+	letter-spacing: -0.03em;
+	-webkit-text-shadow: 3px 0 11px rgba(81,71,48,0.4);
+	text-shadow: 3px 0 11px rgba(81,71,48,0.4);
+}
+.med_sec_09 .info_wrap dd{
+	display: block;
+	margin-top: 12px;
+	font-size: 26px;
+	font-weight: 500;
+}
+.med_sec_09 .info_wrap dd .footnote_wrap{
+	margin-top: 10px;
+	text-align: left;
+}
+.med_sec_09 .con_wrap + .footnote_wrap{
+	margin-top: 40px;
+	text-align: left;
+}
+.med_sec_09 .con_wrap + .footnote_wrap .btn_wrap{
+	margin-bottom: 40px;
+}
+.med_sec_09 .con_wrap + .footnote_wrap .btn_wrap .btn + .btn{
+	margin-top: 16px;
+}
+
+
+
+/* ======================================== [ section 10 / 의과대학 합격 재원생 인터뷰 ] ======================================== */
+.med_sec_10{
+	padding: 140px 0 100px;
+	background-color: #2d2d2d;
+}
+.med_sec_10 .tit_wrap{
+	margin-bottom: 56px;
+	text-align: center;
+}
+.med_sec_10 .tit_wrap .tit{
+	position: relative;
+	color: #fff;
+}
+.med_sec_10 .tit_wrap .tit:before{
+	display: block;
+	content: '';
+	position: absolute;
+	bottom: -26px;
+	right: -56px;
+	width: 369px;
+	height: 55px;
+	background-image: url('/img/suneung/recruit/2025_medical/img_sec_10_line.png');
+	background-repeat: no-repeat;
+}
+.med_sec_10 .tit_wrap strong{
+	font-size: 60px;
+	font-weight: 800;
+}
+.intv_list_wrap{
+	position: relative;
+	padding: 0 36px;
+}
+.med_sec_10 .btn_wrap{
+	margin-top: 65px;
+	text-align: center;
+}
+
+
+
+/* ======================================== [ section 11 / 전국 어디서든 잇올 ] ======================================== */
+.med_sec_11{
+	padding: 100px 0 120px;
+	margin-top: -1px;
+	background-color: #373737;
+}
+.med_sec_11 .item_tit_wrap .desc_wrap{
+	margin-top: 30px;
+}
+.med_sec_11 .item_tit_wrap .desc_wrap p{
+	font-size: 38px;
+	line-height: 1.4em;
+	font-weight: 500;
+}
+.med_sec_11 .item_tit_wrap .desc_wrap strong{
+	display: inline-block;
+	margin-bottom: 10px;
+	font-size: 44px;
+	font-weight: 800;
+}
+.med_sec_11 .img_wrap{
+	margin-top: 70px;
+}
+
+
+
+/* ======================================== [ form section ] ======================================== */
+.med_sec_form{
+	position: relative;
+	padding: 150px 0 120px;
+	margin: 0 auto;	
+	background-color: #f1e7e3;
+}
+.med_sec_form .med_inner:nth-of-type(2){
+	margin-top: 140px;
+}
+#quick_sec_form{
+	position: absolute;
+	top: -220px;
+	left: 0;
+	width: 100%;
+	height: 1px;
+}
+.med_sec_form .sec_tit_wrap{
+	margin-bottom: 40px;
+	text-align: center;
+}
+.med_sec_form .sec_tit{
+	display: block;
+	font-weight: 800;
+	font-size: 50px;
+	color: #222;
+}
+.med_sec_form .sec_tit_wrap .label{
+	display: inline-block;
+	margin-top: 36px;
+	margin-bottom: 28px;
+	padding: 14px 30px;
+	border-radius: 10px;
+	background-color: #f7ab00;
+	font-size: 40px;
+	font-weight: 800;
+	color: #fff;
+	-webkit-text-shadow: 3px 3px 11px rgba(67,47,0,0.34);
+	text-shadow: 3px 3px 11px rgba(67,47,0,0.34);
+}
+.med_sec_form .sec_tit_wrap .desc_wrap{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 10px;
+}
+.med_sec_form .sec_tit_wrap p{
+	font-size: 30px;
+}
+.med_sec_form .sec_tit_wrap .desc_wrap p{
+	display: flex;
+	align-items: center;
+	font-size: 28px;
+}
+.med_sec_form .sec_tit_wrap .desc_wrap p + p:before{
+	display: inline-block;
+	content: '';
+	margin: 0 20px;
+	width: 1px;
+	height: 24px;
+	background-color: #222;
+}
+.med_sec_form .sec_tit_wrap .desc_wrap strong{
+	display: inline-block;
+	margin-right: 10px;
+	font-weight: 800;
+}
+.med_sec_form iframe{
+	width: 100%;
+}
+.med_sec_form .board_write_wrap{
+	padding-bottom: 0;
+}
+.med_sec_form .board_write_wrap .board_write_sl{
+    margin-top: 0;
+}
+.med_sec_form .board.board-form textarea{
+    height: 90px;
+}
+.med_sec_form .board.board-form select{
+	background-color: #fff;
+}
+.med_sec_form .writer label,
+.med_sec_form .chk-id label{
+    font-size: 15px;
+    position: relative;
+    padding: 4px 8px;
+    line-height: 1.2em;
+}
+.med_sec_form .writer input[type="radio"]{
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #E5E5E5;
+    border-radius: 50%;
+    background-color: #fff;
+    vertical-align: middle;
+}
+.med_sec_form .writer input[type="radio"]:checked{
+    border: 1px solid #E0462E;
+}
+.med_sec_form .writer input[type="radio"] + span{
+    position: relative;
+}
+.med_sec_form .writer input[type="radio"] + span:before{
+    display: block;
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: -19px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+.med_sec_form .writer input[type="radio"]:checked + span:before{
+    background-color: #E0462E;
+}
+
+.med_sec_form .board_write_wrap input[type="checkbox"]{
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #E5E5E5;
+    border-radius: 50%;
+    background: #fff url('/img/icon/ico_check_gray.png') top 1px center / 12px no-repeat;
+    vertical-align: middle;
+    outline: none;
+}
+.med_sec_form .board_write_wrap input[type="checkbox"]:checked{
+    background-color: #E0462E;
+    background-image: url('/img/icon/ico_check_white.png');
+    border-color: #E0462E;
+}
+.med_sec_form .board_write_sl_sub6{
+    font-size: 14px;
+}
+.board_write_subject input[type="text"]{
+	width: 120px;
+}
+
+.board_write_wrap .tit_wrap{
+	text-align: center;
+}
+.board_write_wrap .tit_wrap strong{
+	font-size: 36px;
+	font-weight: 600;
+}
+.board_write_wrap .item_tit{
+	color:#A59494;
+	font-weight:bold;
+}
+
+
+
+/* ======================================== [ modal ] ======================================== */
+body.ofh{
+    overflow-y: hidden;
+}
+#dim{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 19;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.6);
+}
+#dim.on{
+	display: block;
+}
+.modal_container{
+    display: none;
+    position: fixed;
+    top: 28%;
+    left: 50%;
+    z-index: 20;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+.modal_container,
+.modal_container *{
+	box-sizing: border-box;
+	letter-spacing: -0.03em;
+	word-break: keep-all;
+}
+.modal_contents{
+	display: none;
+	overflow-y: auto;
+	position: relative;
+	width: calc(100vw - 60px);
+	max-width: 660px;
+	max-height: 60vh;
+	background-color: #fff;
+}
+.modal_contents .img_wrap{
+	text-align: center;
+}
+.modal_contents img{
+	max-width: 100%;
+}
+
+.btn_pop_close,
+.btn_vod_close{
+	position: absolute;
+	padding-bottom: 20px;
+	top: -56px;
+	right: 0;
+	background: none;
+	color: #fff;
+	font-size: 36px;
+	font-weight: 600;
+}
+
+/* 장학 자세히 보기 popup */
+.modal_wrap{
+	padding: 80px 30px;
+}
+.modal_tit_wrap{
+	margin-top: 72px;
+	margin-bottom: 32px;
+}
+.modal_tit_wrap:first-child{
+	margin-top: 0;
+}
+.modal_tit_wrap .tit,
+.modal_tit_wrap .tit *{
+	font-size: 36px;
+	font-weight: 800;
+}
+.modal_tit_wrap.type2 .tit,
+.modal_tit_wrap.type2 .tit *{
+	font-size: 48px;
+}
+.modal_wrap .color_sky{
+	color: #29a3c6 !important;
+}
+.modal_tit_wrap .tit_desc{
+	margin-top: 30px;
+	font-size: 28px;
+	font-weight: 300;
+}
+.modal_tit_wrap .tit_desc strong{
+	display: block;
+	margin-bottom: 10px;
+}
+.modal_tit_wrap .tit_desc strong,
+.modal_tit_wrap .tit_desc strong *{
+	font-size: 33px;
+	font-weight: 600;
+}
+
+.modal_center_list{
+	font-size: 26px;
+	line-height: 1.7em;
+	font-weight: 300;
+	color: #333;
+}
+.modal_info_wrap{
+	margin-top: 70px;
+}
+.modal_info_wrap .tit{
+	display: inline-block;
+	width: 188px;
+	margin-bottom: 34px;
+	padding: 13px 10px;
+	border-radius: 28px;
+	background-color: #29a3c6;
+	color: #fff;
+	font-size: 28px;
+	line-height: 1em;
+	font-weight: 600;
+	text-align: center;
+}
+.modal_info_wrap p{
+	font-size: 26px;
+	line-height: 1.5em;
+	font-weight: 300;
+	color: #333;
+}
+.modal_info_wrap .modal_center_list{
+	margin-top: 70px;
+	font-size: 26px;
+	line-height: 1.3em;
+	font-weight: 300;
+	color: #787878;
+}
+.modal_info_wrap + .modal_tit_wrap{
+	margin-top: 70px;
+	padding-top: 70px;
+	background: url('/img/suneung/recruit/2025_medical/ico_pop_dash.png') no-repeat top center / contain;
+}
+
+.modal_list_wrap dl + dl{
+	margin-top: 10px;
+}
+.modal_list_wrap dt,
+.modal_list_wrap dd{
+	display: inline-block;
+	font-size: 28px;
+	line-height: 1.2em;
+	vertical-align: top;
+}
+.modal_list_wrap dd{
+	font-weight: 300;
+}
+.modal_list_wrap dt{
+	font-weight: 500;
+}
+.modal_list_wrap .footnote{
+	display: inline-block;
+	font-size: 24px !important;
+	font-weight: 400 !important;
+	color: #989797;
+}
+.modal_list_wrap .color_red{
+	margin-top: 40px;
+	margin-bottom: 40px;
+	font-weight: 400;
+}
+
+/* 후기 자세히 보기 popup */
+.modal_review_tit_wrap{
+	display: flex;
+	align-items: center;
+}
+.modal_review_tit_wrap .img_wrap{
+	width: 135px;
+}
+.modal_review_tit_wrap .tit_wrap{
+	width: calc(100% - 135px);
+	padding-left: 40px;
+}
+.modal_review_tit_wrap .tit{
+	font-size: 40px;
+	line-height: 1.2em;
+	font-weight: 600;
+	word-break: keep-all;
+}
+.modal_review_tit_wrap .writer{
+	display: block;
+	margin-top: 28px;
+	font-size: 30px;
+	line-height: 1.3em;
+	font-weight: 300;
+}
+.modal_review_tit_wrap .writer strong{
+	display: block;
+	font-weight: 500;
+}
+.modal_review_conbox{
+	margin-top: 50px;
+	padding-top: 50px;
+	background: url('/img/suneung/recruit/2025_medical/ico_pop_dash2.png') no-repeat top center / contain;
+}
+.modal_review_conbox p{
+	font-size: 26px;
+	line-height: 1.7em;
+	font-weight: 300;
+	word-break: keep-all;
+}
+
+/* 장학 마감 */
+.modal_notice{
+	text-align: center;
+}
+.modal_notice strong{
+	font-size: 38px;
+	line-height: 1.3em;
+	font-weight: 700;
+}
+
+/* 학부모 입시 아카데미 */
+.modal_parents .modal_list_wrap{
+	position: relative;
+}
+.modal_parents .modal_info_wrap .tit{
+	width: 270px;
+}
+.modal_parents .btn_wrap{
+	margin-top: 10px;
+	text-align: right;
+}
+.modal_parents .btn_link_academy{
+	overflow: hidden;
+	display: inline-block;
+	width: 300px;
+	border-radius: 10px;
+	background-color: #333;
+	text-align: center;
+}
+.modal_parents .btn_link_academy strong,
+.modal_parents .btn_link_academy span{
+	display: inline-block;
+	color: #fff;
+	font-weight: 500;
+}
+.modal_parents .btn_link_academy strong{
+	padding: 20px 10px 16px;
+	font-size: 30px;
+}
+.modal_parents .btn_link_academy span{
+	width: 100%;
+	padding: 8px 10px;
+	background-color: #29a3c6;
+	font-size: 24px;
+}
+.modal_parents .btn_wrap + .modal_info_wrap,
+.modal_parents .modal_info_wrap + .modal_info_wrap{
+	padding-top: 70px;
+	background: url('/img/suneung/recruit/2025_medical/ico_pop_dash2.png') no-repeat top center / contain;
+}
+.modal_parents .modal_review_conbox{
+	padding-top: 0;
+	background: none;
+}
+.modal_parents .modal_review_tit_wrap .tit_wrap{
+	width: 100%;
+	padding-left: 0;
+}
+.modal_parent .modal_review_tit_wrap .tit{
+	font-size: 35px;
+}
+
+.modal_parents.apply_fin .modal_list_wrap:after{
+	display: block;
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+	width: 90%;
+	height: 260px;
+	background: url('/img/suneung/recruit/2025_medical/img_fin_stamp2.png') no-repeat center / contain;
+}
+
+.modal_wrap .course_list li{
+	display: flex;
+	align-content: center;
+	justify-content: space-between;
+	padding: 32px;
+	border: 2px solid #ddd;
+	border-radius: 10px;
+	background-color: #f8f8f8;
+}
+.modal_wrap .course_list li + li{
+	margin-top: 22px;
+}
+.modal_wrap .course_list li strong{
+	font-size: 30px;
+	font-weight: 600;
+}
+.modal_wrap .course_list li span{
+	font-size: 26px;
+	font-weight: 400;
+}
+
+/* vod modal */
+.modal_vod_wrap{
+    width: 96%;
+	max-width: 720px;
+}
+.modal_vod_conbox{
+    overflow:hidden;
+    position:relative; 
+    height:0; 
+    padding-bottom:56.25%; 
+    padding-top:30px; 
+}
+.modal_vod_conbox iframe,
+.modal_vod_conbox object,
+.modal_vod_conbox embed {
+    position:absolute; 
+    top:0; 
+    left:0; 
+    width:100%; 
+    height:100%;
+}
+
+
+
+
+
+
+/* ===================================
+device width 721 이상인 경우 px 작업,
+device width 720 이하인 경우 vw로 변환
+=================================== */
+
+/* media */
+@media screen and (max-width: 720px){
+	/* button */
+	a.btn, button.btn{
+		padding: 3.8889vw 2.7778vw;
+		border-radius: 1.3889vw;
+		font-size: 3.6111vw;
+	}
+	.btn_type1{
+		width: 33.3333vw;
+	}
+	.btn_type2{
+		font-size: 4.4444vw;
+		padding: 4.7222vw 2.7778vw;
+	}
+
+	/* vod */
+	.vod_conbox{
+		padding-top: 4.1667vw;
+	}
+	.vod_link_wrap{
+		border-radius: 1.3889vw;
+	}
+	.vod_link_wrap a:before{
+		background-size: 7.0833vw;
+	}
+
+	/* list */
+	.list_type_info > li + li{
+		margin-top: 1.6667vw;
+	}
+	.list_type_info > li > span{
+		width: 2.0833vw;
+		padding-top: 0.2778vw;
+	}
+	.list_type_info > li > div{
+		width: calc(100% - 2.0833vw);
+	}
+	.list_type_info > li p{
+		margin-top: 0.6944vw;
+	}
+	.list_type_bar > li{
+		padding-left: 2.0833vw;
+	}
+	.list_type_bar > li:before{
+		top: 1.6667vw;
+		width: 0.8333vw;
+		height: 0.1389vw;
+	}
+	.list_type_info > li .list_type_bar{
+		margin-top: 0.6944vw;
+	}
+	.list_type_decimal{
+		padding-left: 3.4722vw;
+	}
+
+	/* layout */
+	.med_2025_contents .med_inner{
+		padding-left: 4.1667vw;
+		padding-right: 4.1667vw;
+	}
+	.item_wrap.type1{
+		-webkit-transform: translateY(-5.0000vw);
+		transform: translateY(-5.0000vw);
+	}
+	.item_wrap.type2{
+		padding-top: 20.8333vw;
+		padding-bottom: 20.8333vw;
+	}
+	.item_wrap.type2:before{
+		top: -12.2222vw;
+		width: 91.6667vw;
+		height: 12.5000vw;
+	}
+	.bg_box{
+		padding: 12.5000vw 4.1667vw;
+	}
+	.footnote_wrap p{
+		font-size: clamp(0.625rem, 1.9444vw, 1rem);
+	}
+	.footnote{
+		font-size: clamp(0.625rem, 1.9444vw, 1rem) !important;
+	}
+
+	/* ======================================== [ section 1 / 9개월만에 표준점수 52점 상승 ] ======================================== */
+	.med_sec_01{
+		padding-bottom: 4.7222vw;
+	}
+	.med_sec_01 .item_top{
+		padding-bottom: 11.1111vw;
+	}
+	.med_sec_01 .item_mid .desc_wrap{
+		background-size: 66.6667vw;
+		background-position: 11.1111vw 5.0000vw;
+	}
+	.med_sec_01 .item_btm .desc_wrap{
+		background-size: 64.4444vw;
+		background-position: 2.5000vw 5.0000vw;
+	}
+	.med_sec_01 .item_btm .vod_wrap{
+		margin-top: 2.7778vw;
+	}
+	.med_sec_01 .item_btm .vod_link_wrap:before{
+		top: 5.8333vw;
+		right: 13.8889vw;
+		width: 35.6944vw;
+		height: 17.5000vw;
+	}
+
+	.item_num_wrap.type1{
+		padding-top: 16.1111vw;
+		padding-bottom: 13.8889vw;
+	}
+	.item_num_wrap.type1 .num_tit_wrap{
+		margin-bottom: 11.1111vw;
+	}
+	.item_num_wrap.type1 .num_tit_wrap .num{
+		width: 7.2222vw;
+		height: 7.2222vw;
+		padding: 1.9444vw 1.3889vw;
+		font-size: 3.1944vw;
+	}
+	.item_num_wrap.type1 .num_tit_wrap .tit{
+		margin-top: 6.9444vw;
+	}
+	.item_num_wrap.type1 .num_tit_wrap .tit,
+	.item_num_wrap.type1 .num_tit_wrap .tit strong{
+		font-size: 8.3333vw;
+		line-height: 1.25em;
+	}
+	.item_num_wrap.type1 .num_tit_wrap .desc_wrap{
+		margin-top: 6.9444vw;
+	}
+	.item_num_wrap.type1 .num_tit_wrap .desc_wrap p{
+		font-size: 4.7222vw;
+	}
+	.item_num_wrap.type1 .num_tit_wrap .desc_wrap strong{
+		font-size: 4.7222vw;
+	}
+
+	/* ======================================== [ section 2 / 의대 정원 2000명 확대 ] ======================================== */
+	.med_sec_02{
+		padding-bottom: 30.5556vw;
+	}
+	.med_sec_02 .item_mid .tit{
+		padding: 2.5000vw 0 0.8333vw;
+		background-position: right 7.2222vw bottom 0;
+		background-size: 40.9722vw;
+	}
+	.med_sec_02 .item_mid .footnote_wrap{
+		margin-top: 6.3889vw;
+	}
+	.med_sec_02 .item_btm .tit{
+		background-position: left 10.8333vw bottom 0;
+		background-size: 64.8611vw;
+	}
+	.med_sec_02 .item_btm .footnote_wrap{
+		margin-top: 3.4722vw;
+	}
+
+	/* ======================================== [ section 3 / 지역인재 ] ======================================== */
+	.med_sec_03 .item_top .con_wrap{
+		margin-top: 10.4167vw;
+	}
+	.med_sec_03 .item_mid{
+		margin-top: 13.0556vw;
+	}
+	.item_tit_wrap .desc_wrap{
+		margin-top: 8.3333vw;
+	}
+	.item_tit_wrap .desc_wrap p{
+		font-size: 3.3333vw;
+	}
+	.item_tit_wrap .desc_wrap span{
+		margin-top: 1.3889vw;
+		font-size: 2.7778vw;
+	}
+	.med_sec_03 .note_tit_wrap .tit:before{
+		top: -4.8611vw;
+		right: -10.4167vw;
+		width: 9.7222vw;
+		height: 9.1667vw;
+	}
+	.med_sec_03 .note_list_wrap li:nth-child(1) .list_img span{
+		padding-left: 1.3889vw;
+		padding-right: 1.3889vw;
+	}
+	.med_sec_03 .note_list_wrap li:nth-child(1) .list_con{
+		background-position: 18.0556vw 16.3889vw;
+		background-size: 52.0833vw;
+	}
+	.med_sec_03 .note_list_wrap li:nth-child(2) .list_con{
+		background-position: 6.9444vw 16.3889vw;
+		background-size: 71.8056vw;
+	}
+	.med_sec_03 .note_list_wrap li:nth-child(3) .list_con{
+		padding-right: 5.8333vw;
+		background-position: 6.6667vw 6.9444vw;
+		background-size: 69.1667vw;
+	}
+	.med_sec_03 .note_list_wrap li:nth-child(4) .list_con{
+		background-position: 3.3333vw 16.3889vw;
+		background-size: 43.8889vw;
+	}
+
+	.item_note_wrap + .item_btm{
+		margin-top: 2.7778vw;
+	}
+	.item_note{
+		padding: 19.4444vw 4.1667vw 11.1111vw 3.7500vw;
+	}
+	.item_note:before,
+	.item_note:after{
+		left: -1.8056vw;
+		width: 6.1111vw;
+		height: 27.5000vw;
+	}
+	.item_note:before{
+		top: 16.6667vw;
+	}
+	.item_note:after{
+		bottom: 52.7778vw;
+	}
+
+	.item_note_wrap.type2 .note_tit_wrap{
+		padding: 18.0556vw 5.5556vw 11.1111vw 5.5556vw;
+	}
+	.item_note_wrap.type2 .item_note .con_wrap{
+		padding: 11.1111vw 5.5556vw 11.1111vw 5.5556vw;
+	}
+
+	.note_tit_wrap{
+		margin-bottom: 6.6667vw;
+	}
+	.note_tit_wrap .tit{
+		font-size: 8.3333vw;
+	}
+	.note_tit_wrap p{
+		margin-top: 1.3889vw;
+		font-size: 4.7222vw;
+	}
+
+	.note_list_wrap{
+		margin-top: 13.8889vw;
+	}
+	.note_list_wrap li + li{
+		margin-top: 8.3333vw;
+		padding-top: 10.0000vw;
+	}
+	.note_list_wrap .list_img span{
+		padding-top: 13.8889vw;
+		background-size: 13.8889vw;	
+		font-size: 4.1667vw;
+	}
+	.note_list_wrap .list_con{
+		padding-top: 6.6667vw;
+	}
+	.note_list_wrap .list_con span,
+	.note_list_wrap .list_con strong{
+		font-size: 6.9444vw;
+	}
+	.note_list_wrap .list_con p{
+		margin-top: 3.6111vw;
+		font-size: 4.7222vw;
+	}
+	.note_list_wrap .footnote{
+		margin-top: 2.7778vw;
+	}
+	.note_list_wrap .btn_wrap{
+		margin-top: 4.4444vw;
+	}
+
+	.review_wrap .btn_wrap{
+		margin-top: 5.5556vw;
+	}
+
+	/* ======================================== [ section 4 / N수/반수/직장인 ] ======================================== */
+	.med_sec_04 .item_wrap{
+		padding-top: 9.7222vw;
+	}
+	.med_sec_04 .vod_wrap + .item_tit_wrap{
+		margin-top: 15.2778vw;
+	}
+	.med_sec_04 .item_top .vod_wrap{
+		margin-top: 6.2500vw;
+	}
+	.med_sec_04 .item_mid{
+		margin-top: 13.8889vw;
+	}
+	.med_sec_04 .note_tit_wrap .desc_wrap{
+		margin-top: 8.3333vw;
+	}
+	.med_sec_04 .note_tit_wrap .desc_wrap:before{
+		top: -1.3889vw;
+		width: 67.6389vw;
+		height: 30.2778vw;
+	}
+	.med_sec_04 .note_tit_wrap .desc_wrap li{
+		padding: 1.3889vw 0;
+		padding-left: 6.3889vw;
+	}
+	.med_sec_04 .note_tit_wrap .desc_wrap li:nth-child(-n+3){
+		height: 9.7222vw;
+	}
+	.med_sec_04 .note_tit_wrap .desc_wrap p{
+		padding-left: 4.8611vw;
+		background-size: 3.0556vw;
+	}
+	.med_sec_04 .note_list_wrap li:nth-child(1) .list_con{
+		background-position: right 13.8889vw top 5.8333vw;
+		background-size: 29.5833vw;
+	}
+	.med_sec_04 .note_list_wrap li:nth-child(2) .list_con{
+		background-position: 11.1111vw 5.5556vw;
+		background-size: 60.8333vw;
+	}
+	.med_sec_04 .note_list_wrap li:nth-child(3) .list_con{
+		background-position: 3.8889vw 15.5556vw;
+		background-size: 44.5833vw;
+	}
+
+	.note_list_wrap.type2 .list_img span{
+		padding-top: 17.2222vw;
+	}
+	.note_list_wrap.type2 .list_con{
+		padding-top: 7.6389vw;
+	}
+	.note_list_wrap.type2 .btn_wrap{
+		margin-top: 7.6389vw;
+	}
+	.note_list_wrap.type2 .btn_wrap .btn + .btn{
+		margin-left: 4.1667vw;
+	}
+
+	.review_wrap.n2 .review_conbox{
+		margin-top: 4.1667vw;
+	}
+
+	/* ======================================== [ section 5 / 고3/수시 ] ======================================== */
+	.med_sec_05 .item_mid{
+		margin-top: 11.1111vw;
+	}
+	.med_sec_05 .item_note{
+		padding-bottom: 12.5000vw;
+	}
+	.med_sec_05 .item_note_wrap.type1 .item_note:before{
+		top: 80.5556vw;
+	}
+	.med_sec_05 .note_list_wrap li .list_img span{
+		padding-top: 17.2222vw;
+	}
+	.med_sec_05 .note_list_wrap li:nth-child(1) .list_con{
+		background-position: 5.8333vw 4.7222vw;
+		background-size: 43.1944vw;
+	}
+	.med_sec_05 .note_list_wrap li:nth-child(2) .list_con{
+		background-position: 19.4444vw 3.3333vw;
+		background-size: 59.1667vw;
+	}
+	.med_sec_05 .note_list_wrap li:nth-child(3) .list_con{
+		background-position: right 11.9444vw bottom 9.1667vw;
+		background-size: 31.6667vw;
+	}
+
+	/* ======================================== [ section 6 / 잇올랩 1 - 전국 빅데이터 DB ] ======================================== */
+	.med_sec_06{
+		padding: 16.6667vw 0 15.2778vw;
+	}
+	.med_sec_06:before{
+		height: 191.2500vw;
+	}
+	.med_sec_06 .item_tit_wrap .desc_wrap{
+		margin-bottom: 1.3889vw;
+	}
+	.med_sec_06 .item_btm{
+		margin-top: 16.6667vw;
+	}
+	.med_sec_06 .review_wrap .review_conbox{
+		margin-top: 2.7778vw;
+	}
+
+	.item_num_wrap.type2 .num_tit_wrap{
+		margin-bottom: 8.3333vw;
+	}
+	.item_num_wrap.type2 .num_tit_wrap .tit{
+		padding: 2.7778vw 10.0000vw;
+		margin-bottom: 6.9444vw;
+	}
+	.item_num_wrap.type2 .num_tit_wrap .tit,
+	.item_num_wrap.type2 .num_tit_wrap .tit span{
+		font-size: 5.5556vw;
+	}
+
+	/* ======================================== [ section 7 / 잇올랩 2 - 잇올랩 계산기 ] ======================================== */
+	.med_sec_07{
+		padding: 19.4444vw 0 18.0556vw;
+	}
+	.med_sec_07 .num_tit_wrap:before{
+		top: 3.4722vw;
+		right: -1.3889vw;
+		width: 17.3611vw;
+		height: 13.0556vw;
+	}
+	.med_sec_07 .num_tit_wrap .footnote_wrap{
+		margin-top: 4.1667vw;
+	}
+	.sc_list_wrap{
+		padding: 0 5.0000vw;
+		margin-top: 11.1111vw;
+	}
+	.med_sec .swiper{
+		padding-bottom: 5.0000vw;
+	}
+	.med_sec .btn_arr{
+		width: 3.1944vw;
+		height: 5.6944vw;
+	}
+	/* .med_sec .arr_prev{
+		left: 1.3889vw;
+	}
+	.med_sec .arr_next{
+		right: 1.3889vw;
+	} */
+	.med_sec .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, 
+	.med_sec .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet{
+		margin: 0 0.8333vw;
+	}
+	.med_sec .swiper-pagination-bullet{
+		width: 1.9444vw;
+		height: 1.9444vw;
+	}
+
+	/* ======================================== [ section 8 / 잇올랩 3 - 4단계 밀착 관리 ] ======================================== */
+	.med_sec_08{
+		padding: 19.4444vw 0 18.0556vw;
+	}
+	.med_sec_08 .num_tit_wrap:before{
+		top: 3.8889vw;
+		left: -2.5000vw;
+		width: 94.4444vw;
+		height: 68.4722vw;
+	}
+	.med_sec_08 .con_wrap{
+		margin-top: 13.8889vw;
+	}
+
+	.care_conbox + .care_conbox{
+		margin-top: 9.7222vw;
+	}
+	.care_tit{
+		width: 66.1111vw;
+		padding: 2.0833vw 0;
+	}
+	.care_tit span{
+		padding-left: 4.1667vw;
+		font-size: 4.7222vw;
+	}
+	.care_con{
+		padding: 8.3333vw 4.1667vw;
+		padding-bottom: 33.3333vw;
+		background-position: right 4.1667vw bottom 1.3889vw;
+	}
+	.care_con strong{
+		font-size: 6.9444vw;
+	}
+	.care_con ul{
+		margin-top: 6.2500vw;
+	}
+	.care_con ul li{
+		padding-left: 4.4444vw;
+		font-size: 4.4444vw;
+	}
+	.care_con ul li:before{
+		top: 1.1111vw;
+		width: 2.6389vw;
+		height: 3.1944vw;
+	}
+	.care_con ul li + li{
+		margin-top: 0.6944vw;
+	}
+	.care_con .footnote_wrap{
+		margin-top: 3.3333vw;
+	}
+	.care_conbox:nth-child(1) .care_con{
+		background-size: 44.1667vw;
+	}
+	.care_conbox:nth-child(2) .care_con{
+		background-size: 54.3056vw;
+	}
+	.care_conbox:nth-child(4) .care_con{
+		padding-bottom: 38.8889vw;
+		background-size: 44.8611vw;
+	}
+	.care_conbox:nth-child(5) .care_con{
+		padding-bottom: 38.8889vw;
+		background-size: 44.7222vw;
+	}
+	.care_conbox + .img_wrap{
+		margin-top: 2.7778vw;
+	}
+	.img_wrap + .care_conbox{
+		margin-top: 7.7778vw;
+	}
+	.care_list_wrap + .btn_wrap{
+		margin-top: 7.2222vw;
+	}
+
+	/* ======================================== [ section 9 / 의대관 상품 안내 ] ======================================== */
+	.med_sec_09{
+		padding-bottom: 4.1667vw;
+	}
+	.med_sec_09 .bg_box{
+		padding: 10.0000vw 9.7222vw 6.2500vw;
+	}
+	.med_sec_09 .bg_box:before{
+		top: -2.3611vw;
+		width: 21.9444vw;
+		height: 5.2778vw;
+	}
+	.med_sec_09 .bg_box.apply_fin:after{
+		height: 42.6389vw;
+	}
+	.med_sec_09 .tit_wrap .tit{
+		font-size: 6.9444vw;
+	}
+	.med_sec_09 .con_wrap{
+		margin-top: 7.2222vw;
+	}
+	.med_sec_09 .info_wrap dl + dl{
+		margin-top: 3.6111vw;
+	}
+	.med_sec_09 .info_wrap dt{
+		padding: 1.1111vw 3.6111vw;
+		border-radius: 1.3889vw;
+		font-size: 3.8889vw;
+	}
+	.med_sec_09 .info_wrap dd{
+		margin-top: 1.6667vw;
+		font-size: 3.6111vw;
+	}
+	.med_sec_09 .info_wrap dd .footnote_wrap{
+		margin-top: 1.3889vw;
+	}
+	.med_sec_09 .con_wrap + .footnote_wrap{
+		margin-top: 5.5556vw;
+	}
+	.med_sec_09 .con_wrap + .footnote_wrap .btn_wrap{
+		margin-bottom: 5.5556vw;
+	}
+	.med_sec_09 .con_wrap + .footnote_wrap .btn_wrap .btn + .btn{
+		margin-top: 2.2222vw;
+	}
+
+	/* ======================================== [ section 10 / 의과대학 합격 재원생 인터뷰 ] ======================================== */
+	.med_sec_10{
+		padding: 19.4444vw 0 13.8889vw;
+	}
+	.med_sec_10 .tit_wrap{
+		margin-bottom: 7.7778vw;
+	}
+	.med_sec_10 .tit_wrap .tit:before{
+		bottom: -3.6111vw;
+		right: -7.7778vw;
+		width: 51.2500vw;
+		height: 7.6389vw;
+		background-size: 51.2500vw;
+	}
+	.med_sec_10 .tit_wrap strong{
+		font-size: 8.3333vw;
+	}
+	.med_sec_10 .btn_wrap{
+		margin-top: 9.0278vw;
+	}
+	.intv_list_wrap{
+		padding: 0 5vw;
+	}
+
+	/* ======================================== [ section 11 / 전국 어디서든 잇올 ] ======================================== */
+	.med_sec_11{
+		padding: 13.8889vw 0 16.6667vw;
+	}
+	.med_sec_11 .item_tit_wrap .desc_wrap{
+		margin-top: 4.1667vw;
+	}
+	.med_sec_11 .item_tit_wrap .desc_wrap p{
+		font-size: 5.2778vw;
+	}
+	.med_sec_11 .item_tit_wrap .desc_wrap strong{
+		margin-bottom: 1.3889vw;
+		font-size: 6.1111vw;
+	}
+	.med_sec_11 .img_wrap{
+		margin-top: 9.7222vw;
+	}
+
+	/* ======================================== [ form section ] ======================================== */
+	.med_sec_form{
+		padding: 20.8333vw 0 16.6667vw;
+	}
+	.med_sec_form .med_inner:nth-of-type(2){
+		margin-top: 19.4444vw;
+	}
+	
+	#quick_sec_form{
+		top: -30.5556vw;
+	}
+	.med_sec_form .sec_tit_wrap{
+		margin-bottom: 5.5556vw;
+	}
+	.med_sec_form .sec_tit{
+		font-size: 6.9444vw;
+	}
+	.med_sec_form .sec_tit_wrap .label{
+		margin-top: 5.0000vw;
+		margin-bottom: 3.8889vw;
+		padding: 1.9444vw 4.1667vw;
+		border-radius: 1.3889vw;
+		font-size: 5.5556vw;
+	}
+	.med_sec_form .sec_tit_wrap .desc_wrap{
+		margin-top: 1.3889vw;
+	}
+	.med_sec_form .sec_tit_wrap p{
+		font-size: 4.1667vw;
+	}
+	.med_sec_form .sec_tit_wrap .desc_wrap p{
+		font-size: 3.8889vw;
+	}
+	.med_sec_form .sec_tit_wrap .desc_wrap p + p:before{
+		margin: 0 2.7778vw;
+		width: 0.1389vw;
+		height: 3.3333vw;
+	}
+	.med_sec_form .sec_tit_wrap .desc_wrap strong{
+		margin-right: 1.3889vw;
+	}
+	.med_sec_form .board.board-form textarea{
+		height: 12.5000vw;
+	}
+	.med_sec_form .writer label,
+	.med_sec_form .chk-id label{
+		font-size: 2.0833vw;
+		padding: 0.5556vw 1.1111vw;
+	}
+	.med_sec_form .writer input[type="radio"]{
+		width: 2.7778vw;
+		height: 2.7778vw;
+	}
+	.med_sec_form .writer input[type="radio"] + span:before{
+		top: 0.6944vw;
+		left: -2.6389vw;
+		width: 1.3889vw;
+		height: 1.3889vw;
+	}
+	.med_sec_form .board_write_wrap input[type="checkbox"]{
+		width: 2.7778vw;
+		height: 2.7778vw;
+		background: #fff url('/img/icon/ico_check_gray.png') top 0.1389vw center / 1.6667vw no-repeat;
+	}
+	.med_sec_form .board_write_sl_sub6{
+		font-size: clamp(0.625rem, 1.9444vw, 1rem);
+	}
+	.board_write_subject input[type="text"]{
+		width: 16.6667vw;
+	}
+	.board_write_wrap .tit_wrap strong{
+		font-size: 5.0000vw;
+	}
+
+	/* ======================================== [ modal ] ======================================== */
+	.modal_contents{
+		width: calc(100vw - 8.3333vw);
+	}
+	.btn_pop_close,
+	.btn_vod_close{
+		padding-bottom: 2.7778vw;
+		top: -7.7778vw;
+		font-size: 5.0000vw;
+	}
+
+	/* 장학 자세히 보기 popup */
+	.modal_wrap{
+		padding: 11.1111vw 4.1667vw;
+	}
+	.modal_tit_wrap{
+		margin-top: 10.0000vw;
+		margin-bottom: 4.4444vw;
+	}
+	.modal_tit_wrap .tit,
+	.modal_tit_wrap .tit *{
+		font-size: 5.0000vw;
+	}
+	.modal_tit_wrap.type2 .tit,
+	.modal_tit_wrap.type2 .tit *{
+		font-size: 6.9444vw;
+	}
+	.modal_tit_wrap .tit_desc{
+		margin-top: 4.1667vw;
+		font-size: 3.8889vw;
+	}
+	.modal_tit_wrap .tit_desc strong{
+		margin-bottom: 1.3889vw;
+	}
+	.modal_tit_wrap .tit_desc strong,
+	.modal_tit_wrap .tit_desc strong *{
+		font-size: 4.5833vw;
+	}
+	.modal_center_list{
+		font-size: 3.6111vw;
+	}
+	.modal_info_wrap{
+		margin-top: 9.7222vw;
+	}
+	.modal_info_wrap .tit{
+		width: 26.1111vw;
+		margin-bottom: 4.7222vw;
+		padding: 1.8056vw 1.3889vw;
+		font-size: 3.8889vw;
+	}
+	.modal_info_wrap p{
+		font-size: 3.6111vw;
+	}
+	.modal_info_wrap .modal_center_list{
+		margin-top: 9.7222vw;
+		font-size: 3.6111vw;
+	}
+	.modal_info_wrap + .modal_tit_wrap{
+		margin-top: 9.7222vw;
+		padding-top: 9.7222vw;
+	}
+
+	.modal_list_wrap dl + dl{
+		margin-top: 1.3889vw;
+	}
+	.modal_list_wrap dt,
+	.modal_list_wrap dd{
+		font-size: 3.8889vw;
+	}
+	.modal_list_wrap .footnote{
+		font-size: 3.3333vw !important;
+	}
+	.modal_list_wrap .color_red{
+		margin-top: 5.5556vw;
+		margin-bottom: 5.5556vw;
+	}
+
+	/* 후기 자세히 보기 popup */
+	.modal_review_tit_wrap .img_wrap{
+		width: 18.7500vw;
+	}
+	.modal_review_tit_wrap .tit_wrap{
+		width: calc(100% - 18.7500vw);
+		padding-left: 5.5556vw;
+	}
+	.modal_review_tit_wrap .tit{
+		font-size: 5.5556vw;
+	}
+	.modal_review_tit_wrap .writer{
+		margin-top: 3.8889vw;
+		font-size: 4.1667vw;
+	}
+	.modal_review_conbox{
+		margin-top: 6.9444vw;
+		padding-top: 6.9444vw;
+	}
+	.modal_review_conbox p{
+		font-size: 3.6111vw;
+	}
+
+	/* 장학 마감 */
+	.modal_notice strong{
+		font-size: 5.2778vw;
+	}
+
+	/* 학부모 입시 아카데미 */
+	.modal_parents .modal_info_wrap .tit{
+		width: 37.5000vw;
+	}
+	.modal_parents .btn_wrap{
+		margin-top: 1.3889vw;
+	}
+	.modal_parents .btn_link_academy{
+		width: 41.6667vw;
+	}
+	.modal_parents .btn_link_academy strong{
+		padding: 2.7778vw 1.3889vw 2.2222vw;
+		font-size: 4.1667vw;
+	}
+	.modal_parents .btn_link_academy span{
+		padding: 1.1111vw 1.3889vw;
+		font-size: 3.3333vw;
+	}
+	.modal_parents .btn_wrap + .modal_info_wrap,
+	.modal_parents .modal_info_wrap + .modal_info_wrap{
+		padding-top: 9.7222vw;
+	}
+	.modal_parent .modal_review_tit_wrap .tit{
+		font-size: 4.8611vw;
+	}
+	.modal_parents.apply_fin .modal_list_wrap:after{
+		height: 36.1111vw;
+	}
+
+	.modal_wrap .course_list li{
+		padding: 4.4444vw;
+		border: 0.2778vw solid #ddd;
+	}
+	.modal_wrap .course_list li + li{
+		margin-top: 3.0556vw;
+	}
+	.modal_wrap .course_list li strong{
+		font-size: 4.1667vw;
+	}
+	.modal_wrap .course_list li span{
+		font-size: 3.6111vw;
+	}
+
+	/* vod modal */
+	.modal_vod_conbox{
+		padding-top:4.1667vw; 
+	}
+}

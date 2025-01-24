@@ -1,0 +1,1070 @@
+/* =========================================
+            2024 itall passtar
+========================================= */
+@font-face {
+	font-family: 'ONE-Mobile-POP';
+	src: url('/img/fonts/ONE-Mobile-POP.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+html, body{
+	margin: 0;
+	padding: 0;
+}
+body.ofh{
+	overflow: hidden;
+}
+
+
+
+/* layout */
+.passtar_2024_contents{
+	overflow-x: hidden;
+}
+.passtar_2024_contents *{
+	font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+	color: #333;
+	letter-spacing: -0.02em;
+}
+.passtar_2024_contents .passtar_inner{
+position: relative;
+max-width: 720px;
+margin-left: auto;
+margin-right: auto;
+	padding-left: 35px;
+	padding-right: 35px;
+}
+.passtar_sec{
+	padding: 70px 0;
+	background-position: top center;
+	background-size: cover;
+}
+
+
+
+/* common */
+fieldset{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+.font_one{
+font-family: 'ONE-Mobile-POP' !important;
+	font-weight: 400;
+}
+.img_wrap img{
+	max-width: 100%;
+}
+.gift_img_wrap{
+	text-align: center;
+}
+.gift_img_wrap img{
+	max-width: 75%;
+}
+.text_center{
+	text-align: center !important;
+}
+
+/* color */
+.color_red, .color_red *{
+	color: #f00 !important;
+}
+.bg_white{
+	background: #fff;
+}
+
+/* btn */
+a{
+	text-decoration: none;
+	color: inherit;
+}
+.btn{
+	display: inline-block;
+	width: auto;
+	border: 0;
+	background-color: unset;
+	-webkit-transition: opacity 0.3s;
+	transition: opacity 0.3s;
+	box-sizing: border-box;
+}
+.btn:hover{
+	opacity: 0.8;
+}
+.btn_click{
+	width: 80%;
+	max-width: 338px;
+	padding: 22px 0;
+	border-radius: 33px;
+	background-color: #333;
+	background-repeat: no-repeat;
+	background-position: 6px 5px;
+	background-size: 52px;
+	/* animation: btnClick 1s infinite linear; */
+}
+@keyframes btnClick{
+	0%, 100%{transform: scale(1);}
+	50%{transform: scale(1.02);}
+}
+.btn_click span{
+	position: relative;
+	display: inline-block;
+	padding-left: 35px;
+	color: #fff;
+	font-size: 18px;
+	font-weight: 500;
+}
+
+/* list */
+.list_type_info{
+	padding: 0;
+}
+.list_type_info > li,
+.list_type_bar > li{
+	display: flex;
+	align-items: flex-start;
+}
+.list_type_info > li + li{
+	margin-top: 8px;
+}
+.list_type_info > li > span{
+	display: inline-block;
+	width: 10px;
+	padding-top: 1px;
+}
+.list_type_info > li > div{
+	width: calc(100% - 10px);
+	word-break: keep-all;
+}
+.list_type_bar > li{
+	position: relative;
+	padding-left: 10px;
+	font-size: 12px;
+}
+.list_type_bar > li:before{
+	display: block;
+	content: '';
+	position: absolute;
+	top: 6px;
+	left: 0;
+	width: 4px;
+	height: 1px;
+	background-color: #333;
+}
+.list_type_bar > li.color_red:before{
+	background-color: #f00;
+}
+.list_type_info > li .list_type_bar{
+	margin-top: 4px;
+}
+
+.list_type_decimal{
+	padding-left: 20px;
+}
+.list_type_decimal li{
+	display: list-item;
+	list-style-type: decimal;
+}
+
+
+/* main section */
+.passtar_main_sec{
+	padding: 16.08vw 0 11.25vw;
+	position: relative;
+	background-image: url('/img/suneung/event/2024_itallpasstar/main_bg.png');
+}
+.passtar_main_sec:before{
+	display: block;
+	content: '';
+	position: absolute;
+	top: 127px;
+	left: 25px;
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+	background: url('/img/suneung/event/2024_itallpasstar/main_star.png') no-repeat top center / contain;
+	opacity: 0;
+	animation: mainStar 1.5s infinite;
+}
+.passtar_main_sec:after{
+	display: block;
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+	width: 100%;
+	height: 34vw;
+	background: url('/img/suneung/event/2024_itallpasstar/main_balloon.png') no-repeat top center / contain;
+	animation: mainBalloon 3s infinite linear;
+}
+@keyframes mainStar{
+	0%{opacity: 0;transform: translateY(0);}
+	20%{opacity: 1;}
+	30%{opacity: 0;}
+	50%{transform: translateY(5px);}
+	80%{opacity: 1;transform: translateY(0);}
+}
+@keyframes mainBalloon{
+	0%, 100%{top: 0;}
+	40%{top: -10px;}
+	60%{top: -10px;}
+}
+.passtar_main_sec .tit_wrap{
+	position: relative;
+	text-align: center;
+}
+.passtar_main_sec .sub_tit_wrap{
+	margin: 25px 0 30px;
+	background: url('/img/suneung/event/2024_itallpasstar/main_sub_tit_bg.png') no-repeat top center / contain;
+	text-align: center;
+}
+.passtar_main_sec .sub_tit_wrap strong{
+	display: inline-block;
+	padding: 20px 15px 30px;
+	font-size: 33px;
+	font-weight: 400;
+	color: #fff;
+}
+.kit_wrap{
+	position: relative;
+}
+.kit_wrap:before{
+	display: block;
+	content: '';
+	position: absolute;
+	top: -10%;
+	right: -2%;
+	width: 12.66vw;
+	height: 12.41vw;
+	background: url('/img/suneung/event/2024_itallpasstar/main_obj_smile.png') no-repeat center / contain;
+}
+.kit_wrap img{
+	max-width: 100%;
+}
+.main_desc{
+	margin-top: 60px;
+	text-align: center;
+}
+.main_desc p{
+	font-size: 27px;
+	letter-spacing: 0.02em;
+	line-height: 1.5em;
+	word-break: keep-all;
+}
+
+
+/* sub section */
+.sec_tit_wrap{
+	position: relative;
+	padding-top: 80px;
+	margin-bottom: 48px;
+	text-align: center;
+}
+.sec_tit_wrap:before{
+	display: block;
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+	width: 60px;
+	height: 60px;
+	background-image: url('/img/suneung/event/2024_itallpasstar/sec_01_tit_obj.png');
+	background-repeat: no-repeat;
+	background-position: top center;
+	background-size: contain;
+}
+.sec_tit_wrap .sec_tit{
+	font-size: 40px;
+font-family: 'ONE-Mobile-POP';
+	font-weight: 400;
+}
+.sec_tit_wrap .sub_tit{
+	margin-top: 18px;
+	font-size: 20px;
+	line-height: 1.4em;
+font-family: 'ONE-Mobile-POP';
+	word-break: keep-all;
+}
+
+.tab_wrap{
+	position: relative;
+	width: 100%;
+	height: 8.33vw;
+}
+.tab_wrap.fixed .tab_menu{
+	position: fixed;
+	top: 111px;
+left: 50%;
+-webkit-transform: translateX(-50%);
+transform: translateX(-50%);
+	width: calc(100% - 70px);
+	z-index: 10;
+}
+.tab_menu{
+	display: flex;
+max-width: 720px;
+}
+.tab_menu li{
+	width: calc((100% - 20px)/3);
+}
+.tab_menu li + li{
+	margin-left: 10px;
+}
+.tab_menu li a{
+	display: block;
+}
+.tab_menu li a img{
+	max-width: 100%;
+}
+
+.sec_wrap{
+	padding: 36px 36px 65px;
+	border: 1px solid #ddd;
+	border-radius: 30px;
+	background-color: #fff;
+}
+.sec_wrap .btn_wrap{
+	margin-top: 42px;
+}
+.sec_wrap .acco_wrap{
+	margin-top: 50px;
+}
+.img_desc{
+	margin-top: 36px;
+	font-size: 18px;
+	line-height: 1.4em;
+	font-weight: 500;
+	letter-spacing: -0.05em;
+	word-break: keep-all;
+}
+.img_desc strong{
+	font-weight: 600;
+}
+.img_desc .color_red{
+	display: block;
+	margin-top: 24px;
+	font-weight: 500;
+}
+
+
+.acco_wrap{
+	border-radius: 6px;
+	border: 1px solid #bebebe;
+	background-color: #fff;
+}
+.acco_btn{
+	display: block;
+	position: relative;
+	padding: 20px 20px;
+	font-size: 18px;
+	font-weight: 600;
+	color: #000;
+}
+.acco_btn:after{
+	display: block;
+	content: '';
+	position: absolute;
+	top: 22px;
+	right: 20px;
+	width: 14px;
+	height: 12px;
+	background: url('/img/suneung/event/2024_itallpasstar/ico_accodion.png') no-repeat center / contain;
+	-webkit-transition: transform 0.3s;
+	transition: transform 0.3s;
+}
+.acco_btn.on:after{
+	-webkit-transform: rotate(180deg);
+	transform: rotate(180deg);
+}
+.acco_con{
+	display: none;
+	/* padding: 30px 36px 36px; */
+	border-top: 1px solid #ddd;
+	color: #000;
+}
+.acco_con .tit{
+	display: block;
+	margin-bottom: 15px;
+	font-size: 16px;
+	font-weight: 600;
+}
+.acco_con *{
+	font-size: 14px;
+	line-height: 1.45em;
+	font-weight: 500;
+	word-break: keep-all;
+}
+
+
+.info_wrap,
+.acco_notice{
+	/* padding: 24px 30px; */
+	padding: 24px 20px;
+}
+.info_wrap dl{
+	display: flex;
+}
+.info_wrap dl + dl{
+	margin-top: 20px;
+}
+.info_wrap dt{
+	width: 100px;
+	text-align: center;
+}
+.info_wrap dt strong{
+	display: block;
+	padding: 5px;
+	border-radius: 18px;
+	background-color: #dcedff;
+	font-size: 16px;
+	font-weight: 600;
+	color: #000;
+}
+.info_wrap dd{
+	width: calc(100% - 105px);
+	padding-top: 5px;
+	padding-left: 12px;
+	font-size: 14px;
+	font-weight: 500;
+}
+.info_wrap dd .help_txt{
+	font-size: 14px;
+	line-height: 1.45em;
+	font-weight: 500;
+}
+.info_wrap dd strong{
+	font-weight: 600;
+}
+.hyperlink{
+	font-weight: 500;
+	color: #193fff !important;
+	text-decoration: underline !important;
+}
+
+.acco_notice{
+	border-bottom-right-radius: 6px;
+	border-bottom-left-radius: 6px;
+	background-color: #f8f8f8;
+}
+
+
+
+/* section 1 합격축하 */
+.passtar_sec_01{
+	background-image: url('/img/suneung/event/2024_itallpasstar/sec_01_bg.png');
+}
+.passtar_sec_01 .sec_wrap{
+	margin-top: 60px;
+}
+.passtar_sec_01 .color_key{
+	color: #0080ff;
+}
+.passtar_sec_01 .btn_click{
+	background-color: #278aef;
+	background-image: url('/img/suneung/event/2024_itallpasstar/btn_click_01.png');
+}
+
+
+
+/* section 2 합격비결 */
+.passtar_sec_02{
+	background-image: url('/img/suneung/event/2024_itallpasstar/sec_02_bg.png');
+}
+.passtar_sec_02 .sec_tit_wrap:before{
+	background-image: url('/img/suneung/event/2024_itallpasstar/sec_02_tit_obj.png');
+}
+.passtar_sec_02 .color_key{
+	color: #6c00ff
+}
+.passtar_sec_02 .sec_wrap{
+	position: relative;
+}
+.passtar_sec_02 .sec_wrap:before,
+.passtar_sec_02 .sec_wrap:after{
+	display: block;
+	content: '';
+	position: absolute;
+}
+
+.tip_box{
+	position: relative;
+	margin-top: 54px;
+	padding: 36px 20px 24px;
+	border: 1px solid #ddd;
+	border-radius: 7px;
+	background-color: #f8f8f8;
+	text-align: center;
+}
+.tip_box *{
+	font-size: 20px;
+	line-height: 1.4em;
+	word-break: keep-all;
+}
+.tip_box strong{
+	display: inline-block;
+	position: absolute;
+	top: -21px;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+	padding: 7px 30px;
+	border-radius: 36px;
+	background-color: #8444d9;
+	color: #fff;
+	font-size: 20px;
+	font-weight: 400;
+}
+.tip_box p{
+	margin-bottom: 10px;
+	font-size: 20px;
+	font-weight: 800;
+}
+.color_yellow{
+	color: #fcff00;
+}
+
+.gift_list{
+	flex-wrap: wrap;
+	display: flex;
+}
+.gift_list li{
+	overflow: hidden;
+	position: relative;
+	width: calc((100% - 20px)/2);
+	margin-left: 20px;
+	margin-top: 20px;
+	border-radius: 12px;
+	border: 1px solid #ddd;
+	background-color: #f8f8f8;
+	box-sizing: border-box;
+}
+.gift_list li:nth-child(2n+1){
+	margin-left: 0;
+}
+.gift_list li:nth-child(-n+2){
+	margin-top: 0;
+}
+.gift_list .gift_top{
+	padding: 24px 14px 18px;
+	position: relative;
+}
+.gift_list .label{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	top: 14px;
+	left: 14px;
+	width: 60px;
+	height: 60px;
+	background: url('/img/suneung/event/2024_itallpasstar/sec_02_label_04.png') no-repeat left top / contain;
+	font-size: 22px;
+	color: #fff;
+	font-family: 'ONE-Mobile-POP';
+	font-weight: 400;
+	-webkit-text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.1);
+	text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.1);
+	box-sizing: border-box;
+}
+.gift_list li:nth-child(1) .label{
+	background-image: url('/img/suneung/event/2024_itallpasstar/sec_02_label_01.png');
+}
+.gift_list li:nth-child(2) .label{
+	background-image: url('/img/suneung/event/2024_itallpasstar/sec_02_label_02.png');
+}
+.gift_list li:nth-child(3) .label{
+	background-image: url('/img/suneung/event/2024_itallpasstar/sec_02_label_03.png');
+}
+.gift_list .img_wrap{
+	text-align: center;
+}
+.gift_list .tit{
+	display: block;
+	height: 2.4em;
+	margin-top: 18px;
+	font-size: 20px;
+	line-height: 1.2em;
+	font-weight: 600;
+	text-align: center;
+}
+.gift_bottom{
+	padding: 12px 20px;
+	background-color: #984bff;
+	font-size: 26px;
+	font-weight: 600;
+	color: #fff;
+	text-align: center;
+}
+
+.passtar_sec_02 .btn_click{
+	background-color: #8444d9;
+	background-image: url('/img/suneung/event/2024_itallpasstar/btn_click_02.png');
+}
+
+.passtar_sec_02 .info_wrap dt strong{
+	background-color: #e9d9ff;
+}
+
+
+
+/* section 3 다관왕축하 */
+.passtar_sec_03{
+	background-image: url('/img/suneung/event/2024_itallpasstar/sec_03_bg.png');
+}
+.passtar_sec_03 .sec_tit_wrap:before{
+	background-image: url('/img/suneung/event/2024_itallpasstar/sec_03_tit_obj.png');
+}
+.passtar_sec_03 .color_key{
+	color: #ff4848;
+}
+
+.tip_msg{
+	margin-top: 36px;
+	text-align: center;
+}
+.tip_msg *{
+	font-size: 20px;
+	line-height: 1.2em;
+	word-break: keep-all;
+}
+.tip_msg p{
+	margin: 6px 0;
+	font-weight: 600;
+}
+.tip_msg + .img_desc{
+	margin-top: 30px;
+}
+
+.passtar_sec_03 .btn_click{
+	background-color: #ee3e3e;
+	background-image: url('/img/suneung/event/2024_itallpasstar/btn_click_03.png');
+}
+
+.passtar_sec_03 .info_wrap dt strong{
+	background-color: #ffe2e6;
+}
+
+
+
+/* section 4 꿈키 */
+.passtar_sec_04{
+	background-image: url('/img/suneung/event/2024_itallpasstar/sec_04_bg.png');
+}
+.passtar_sec_04 .sec_tit_wrap:before{
+	background-image: url('/img/suneung/event/2024_itallpasstar/sec_04_tit_obj.png');
+}
+.passtar_sec_04 .color_key{
+	color: #0f9b12;
+}
+.passtar_sec_04 .sec_wrap{
+	position: relative;
+}
+.passtar_sec_04 .sec_wrap:before,
+.passtar_sec_04 .sec_wrap:after{
+	display: block;
+	content: '';
+	position: absolute;
+}
+
+.passtar_sec_04 .btn_click{
+	background-color: #2dab30;
+	background-image: url('/img/suneung/event/2024_itallpasstar/btn_click_04.png');
+}
+
+.passtar_sec_04 .info_wrap dt strong{
+	background-color: #e3ffce;
+}
+
+.pop_contents.type1{
+	width: calc(100% - 40px);
+	padding-bottom: 40px;
+	border: 3px solid #2cab2f;
+	border-radius: 24px;
+	background-color: #fff;
+}
+.pop_contents.type1 .pop_tit_wrap{
+	padding: 30px 0;
+	border-bottom: 1px solid #ddd;
+}
+.pop_contents.type1 .pop_tit_wrap .btn_pop_close{
+	width: 20px;
+	height: 20px;
+	top: 15px;
+	right: 15px;
+	background-image: url('/img/suneung/event/2024_itallpasstar/ico_close_black.png');
+}
+.pop_contents.type1 .pop_tit_wrap strong,
+.pop_contents.type1 .pop_tit_wrap span{
+	font-size: 24px;
+	font-weight: 700;
+}
+.pop_contents.type1 .pop_con_wrap{
+	overflow-y: auto;
+	height: calc(90vh - 200px);
+	padding: 35px 20px 0;
+}
+.pop_contents.type1 .pop_con_wrap .tit{
+	display: block;
+	margin: 24px 0 12px;
+	font-size: 18px;
+	font-weight: 700;
+}
+.pop_contents.type1 .pop_con_wrap .tit:first-child{
+	margin-top: 0;
+}
+.pop_contents.type1 .pop_con_wrap .tit strong{
+	font-size: 18px;
+	font-weight: 700;
+	color: #0f9b12;
+}
+.pop_contents.type1 .pop_con_wrap *{
+	font-size: 14px;
+	line-height: 1.4em;
+	font-weight: 500;
+	word-break: keep-all;
+}
+.pop_contents.type1 .pop_con_wrap strong{
+	font-weight: 700;
+}
+
+
+
+/* section 5 */
+.passtar_sec_05{
+	padding: 70px 0;
+	background-image: url('/img/suneung/event/2024_itallpasstar/sec_05_bg.png');
+}
+.passtar_sec_05 .sec_wrap{
+	padding: 40px 36px;
+	border: 1px solid #bebebe;
+	border-radius: 6px;
+}
+.passtar_sec_05 .sec_tit{
+	margin-bottom: 26px;
+	font-size: 18px;
+}
+.passtar_sec_05 ul li{
+	font-size: 14px;
+	line-height: 1.4em;
+	font-weight: 500;
+}
+.passtar_sec_05 .btn_wrap{
+	margin-top: 44px;
+	text-align: center;
+}
+.passtar_sec_05 .btn_click{
+	background-image: url('/img/suneung/event/2024_itallpasstar/btn_click_05.png');
+	animation: none;
+}
+.passtar_sec_05 .btn_click span:before{
+	display: block;
+	content: '';
+	position: absolute;
+	top: -1px;
+	left: 10px;
+	width: 16px;
+	height: 20px;
+	background-image: url('/img/suneung/event/2024_itallpasstar/ico_share.png');
+	background-size: contain;
+}
+
+.pop_contents.type2{
+	max-width: 630px;
+	width: 80%;
+	padding: 27px 20px 50px;
+	border-radius: 24px;
+	background-color: #333;
+}
+.pop_contents.type2 .pop_tit_wrap strong{
+	font-size: 22px;
+	font-weight: 600;
+	color: #fff;
+}
+.pop_contents.type2 .pop_con_wrap{
+	margin-top: 38px;
+}
+.pop_con_wrap.sns_btn_wrap{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.btn_sns_share{
+	padding: 84px 12px 0;
+	background: url('/img/suneung/event/2024_itallpasstar/btn_kakao.png') no-repeat top center / 73px;
+	font-size: 16px;
+	font-weight: 500;
+	color: #bebebe;
+}
+.btn_sns_share + .btn_sns_share{
+	margin-left: 46px;
+	background: url('/img/suneung/event/2024_itallpasstar/btn_link.png') no-repeat top center / 73px;
+}
+
+
+/* popup */
+.pop_contents{
+	display: none;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	z-index: 10001;
+}
+.pop_tit_wrap{
+	position: relative;
+	text-align: center;
+}
+.pop_tit_wrap .btn_pop_close{
+	display: block;
+	position: absolute;
+	width: 16px;
+	height: 16px;
+	top: -4px;
+	right: 0px;
+	background-image: url('/img/suneung/event/2024_itallpasstar/ico_close.png');
+	background-size: contain;
+}
+
+
+/* footer */
+.passtar_footer.passtar_sec{
+	padding: 5.83vw 0;
+	background-image: url('/img/suneung/event/2024_itallpasstar/footer_bg.png');
+}
+.passtar_footer .img_wrap{
+	width: 34vw;
+	margin: 0 auto;
+}
+.passtar_footer .logo_wrap{
+	width: 20.91vw;
+	margin-top: 4.08vw;
+}
+
+
+/* floating banner */
+.float_banner{
+	position: fixed;
+	bottom: 200px;
+	right: 50px;
+	z-index: 10;
+}
+.float_banner a{
+	display: block;
+	width: 100px;
+	height: 100px;
+	border: 1px solid #f00;
+}
+
+
+@media screen and (max-width: 480px){
+.tab_wrap.fixed .tab_menu{
+	width: calc(100% - 40px);
+}
+	.btn_click{
+			padding: 16px 0;
+			background-size: 40px;
+			background-position: 6px 4px;
+	}
+	.btn_click span{
+			font-size: 16px;
+	}
+
+	.list_type_info > li + li{
+			margin-top: 4px;
+	}
+
+	.passtar_2024_contents .passtar_inner{
+			padding-left: 20px;
+			padding-right: 20px;
+	}
+	.passtar_sec{
+			padding: 50px 0;
+	}
+
+	.passtar_main_sec .sub_tit_wrap strong{
+			padding: 14px 10px 20px;
+			font-size: 20px;
+	}
+	.passtar_main_sec .sub_tit_wrap{
+			margin: 15px 0 20px;
+	}
+	.main_desc{
+			margin-top: 40px;
+	}
+	.main_desc p{
+			font-size: 16px;
+	}
+
+	.sec_wrap{
+			padding: 20px 20px 40px;
+	}
+	.sec_wrap .btn_wrap{
+			margin-top: 20px;
+	}
+	.sec_wrap .acco_wrap{
+			margin-top: 30px;
+	}
+
+	.sec_tit_wrap{
+			padding-top: 50px;
+			margin-bottom: 28px;
+	}
+	.sec_tit_wrap:before{
+			background-size: 30px;
+	}
+	.sec_tit_wrap .sec_tit{
+			font-size: 24px;
+	}
+	.sec_tit_wrap .sub_tit{
+			margin-top: 10px;
+			font-size: 14px;
+	}
+	.img_desc{
+			margin-top: 20px;
+			font-size: 13px;
+	}
+	.img_desc .color_red{
+			margin-top: 16px;
+	}
+
+	.tip_box{
+			margin: 50px 0 30px;
+			padding: 30px 20px 20px;
+	}
+	
+	.tip_box strong{
+			padding: 6px 24px;
+			font-size: 16px;
+	}
+	.tip_box strong span{
+			font-size: 16px;
+	}
+	.tip_box p{
+			margin-bottom: 6px;
+			font-size: 14px;
+	}
+	.tip_box *{
+			font-size: 13px;
+	}
+	.tip_msg{
+			margin-top: 20px;
+	}
+	.tip_msg *{
+			font-size: 16px;
+	}
+	.tip_msg + .img_desc{
+			margin-top: 20px;
+	}
+
+	.acco_btn{
+			padding: 20px;
+			font-size: 16px;
+	}
+	.acco_btn:after{
+			right: 20px;
+			width: 10px;
+			height: 8px;
+	}
+	.acco_con *{
+			font-size: 13px;
+	}
+	.info_wrap, 
+	.acco_notice{
+			padding: 20px;
+	}
+
+	.info_wrap dl{
+			flex-direction: column;
+	}
+	.info_wrap dl + dl{
+			margin-top: 15px;
+	}
+	.info_wrap dt{
+			width: 90px;
+	}
+	.info_wrap dt strong{
+			padding: 3px 0 2px;
+			font-size: 13px;
+	}
+	.info_wrap dd{
+			width: 100%;
+			padding-left: 0;
+			font-size: 13px;
+	}
+	.info_wrap dd .help_txt{
+			font-size: 13px;
+	}
+
+	.passtar_sec_01 .sec_wrap{
+			margin-top: 40px;
+	}
+
+	.gift_list li{
+			width: calc((100% - 10px)/2);
+			margin-left: 10px;
+			margin-top: 10px;
+	}
+	.gift_list .tit{
+			margin-top: 10px;
+			font-size: 13px;
+	}
+	.gift_list .gift_top{
+			padding: 10px 0;
+	}
+	.gift_list .label{
+			top: 10px;
+			left: 10px;
+			width: 40px;
+			height: 40px;
+			font-size: 14px;
+	}
+	.gift_top .img_wrap img{
+			max-width: 70%;
+	}
+	.gift_bottom{
+			padding: 8px 10px;
+			font-size: 16px;
+	}
+
+	.passtar_sec_05 .sec_wrap{
+			padding: 30px 20px;
+	}
+	.passtar_sec_05 .sec_tit{
+			margin-bottom: 20px;
+			font-size: 16px;
+	}
+	.passtar_sec_05 ul li{
+			font-size: 13px;
+	}
+
+	.pop_contents.type1 .pop_tit_wrap{
+			padding: 25px 0 20px;
+	}
+	.pop_contents.type1 .pop_tit_wrap strong, 
+	.pop_contents.type1 .pop_tit_wrap span{
+			font-size: 18px;
+	}
+	.pop_contents.type1 .pop_tit_wrap .btn_pop_close{
+			width: 14px;
+			height: 14px;
+	}
+	.pop_contents.type1 .pop_con_wrap{
+			padding-top: 25px;
+	}
+	.pop_contents.type1 .pop_con_wrap *{
+			font-size: 13px;
+	}
+	.pop_contents.type1 .pop_con_wrap .tit{
+			margin: 12px 0 4px;
+			font-size: 16px;
+	}
+	.pop_contents.type1 .pop_con_wrap .tit strong{
+			font-size: 16px;
+	}
+
+}
