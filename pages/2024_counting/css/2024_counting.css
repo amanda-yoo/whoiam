@@ -1,0 +1,213 @@
+/* ============================
+        2024 counting
+============================ */
+/* font */
+@font-face {
+	font-family: 'IAMAPLAYER';
+	src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-2@1.0/IAMAPLAYER.woff2') format('woff2');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* common */
+.text_left {
+text-align:left;
+}
+.mb_10 {
+margin-bottom:10px;
+}
+.test_msg {
+display:block;
+padding:50px 0;
+font-size:32px;
+color:#f00;
+text-align: center;
+}
+
+/* visual */
+.count_top_contents {
+	overflow: hidden;
+min-width:1200px;
+background:#d04823 url('/img/suneung/glory_honor/2024_GH_Count/new/bg_top_visual.png') no-repeat top center;
+}
+.count_visual_wrap {
+width:1200px;
+margin:0 auto;
+}
+.count_visual_wrap img {
+max-width:100%;
+animation:updown 3s linear infinite;
+}
+
+@keyframes updown {
+0%,100% {
+	-webkit-transform:translateY(0);
+	transform:translateY(0);
+}
+50% {
+	-webkit-transform:translateY(20px);
+	transform:translateY(20px);
+}
+}
+
+/* text */
+.top_txt_wrap {
+	padding-top: 45px;
+/* margin-top:80px; */
+}
+.top_txt_wrap img {
+display:block;
+margin:0 auto;
+}
+.top_txt_wrap img + img {
+margin-top: 20px;
+}
+.top_help_txt {
+max-width:1024px;
+margin:0 auto;
+/* text-align:center; */
+}
+.top_help_txt p {
+font-size:13px;
+color:#000;
+font-family: 'pretendard';
+}
+
+/* scroe */
+.tick .tick-credits {
+display:none;
+}
+.score_wrap {
+position:relative;
+z-index:1;
+width:1200px;
+margin: 35px auto 0;
+padding:0 170px;
+}
+.score_wrap .item {
+	position: relative;
+border-radius:25px;
+background-repeat:no-repeat;
+background-position:top center;
+background-size:cover;
+-webkit-box-shadow:50px 50px 38px 0px rgba(0,0,0,0.31);
+box-shadow:50px 50px 38px 0px rgba(0,0,0,0.31);
+}
+.score_wrap .item .tick{
+	position: absolute;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+}
+.score_wrap .item .tick-flip {
+position:relative;
+min-width:unset;
+width:47px;
+height:69px;
+border-radius:14px;
+font-size:62px;
+font-family:'IAMAPLAYER';
+line-height:1.1em;
+text-indent:0.13em;
+}
+.score_wrap .item .tick-flip:nth-child(1){
+	margin-left: 0;
+}
+.score_wrap .item .tick-flip-panel {
+color:#fff;
+}
+.score_wrap .item .tick+span {
+overflow:hidden;
+position:absolute;
+width:1px;
+height:1px;
+margin:-1px;
+clip:rect(0,0,0,0);
+clip-path:polygon(0 0,0 0,0 0);
+}
+
+.total_score .item {
+	height: 407px;
+/* padding:270px 75px 85px 87px; */
+background-image:url('/img/suneung/glory_honor/2024_GH_Count/new/img_score1.png');
+}
+.total_score .item .tick{
+	width: calc((88px*6) + (23px*5));
+	bottom: 16%;
+}
+.total_score .item .tick-flip {
+width:88px;
+height:128px;
+border-radius:20px;
+margin-left:23px;
+margin-right:0;
+font-size:116px;
+}
+
+.sub_score {
+display:flex;
+margin-top:15px;
+}
+.sub_score .item {
+	position: relative;
+width: 255px;
+	height: 229px;
+/* padding:150px 48px 54px 50px; */
+}
+.sub_score .item+.item {
+margin-left:15px;
+}
+.sub_score .item:nth-child(1) {
+background-image:url('/img/suneung/glory_honor/2024_GH_Count/new/img_score2.png');
+}
+.sub_score .item:nth-child(2) {
+background-image:url('/img/suneung/glory_honor/2024_GH_Count/new/img_score3.png');
+}
+.sub_score .item:nth-child(3) {
+	width: 317px;
+background-image:url('/img/suneung/glory_honor/2024_GH_Count/new/img_score4.png');
+}
+.sub_score .item .tick{
+	width: calc((47px*3) + (12px*2));
+	bottom: 18%;
+}
+.sub_score .item:nth-child(3) .tick{
+	width: calc((47px*4) + (12px*3));
+}
+.sub_score .item .tick-flip {
+	margin-left:12px;
+	margin-right: 0;
+}
+
+/* table */
+.count_table_contents {
+width:1200px;
+margin:50px auto 0;
+}
+.count_table_contents .hapgyuks_wrap_7 {
+position:relative;
+	margin-bottom:0;
+	border-top: 0;
+}
+
+/* media */
+@media screen and (max-width:1600px) {
+/* .top_txt_wrap img {
+	width:92%;
+}
+.top_txt_wrap img+img {
+	width: 53%;
+} */
+}
+
+/* banner */
+.gh_banner {
+width: 100%;
+	background: #fddbc7;
+text-align: center;
+}
+.gh_banner img {
+max-width: 1920px;
+min-width: 1200px;
+width: 100%;
+}
