@@ -1,5 +1,5 @@
 $(document).ready(function(){
-	$('img[usemap]').rwdImageMaps(); // image map
+	// $('img[usemap]').rwdImageMaps(); // image map
 	$('.js_tab_menu').length && tabScroll(); // tab scroll
 	$('.js_tab_wrap').length && mainMenu(); // main menu
 	$('.js_acco_con').length && accodion(); // accodion
@@ -13,7 +13,7 @@ function tabScroll(){
 	$('.js_tab_menu li a').on('click', function(){
 			var targetId = $(this).data('name'),
 					targetSec = $('#' + targetId).offset().top,
-					targetTop = targetSec - 100;
+					targetTop = targetSec;
 			$('html').animate({
 					scrollTop : targetTop
 			}, '2000');
@@ -26,7 +26,7 @@ function mainMenu(){
 	// sticky menu
 	$(window).scroll(function(){
 			var tabMenu = $('.js_tab_wrap'),
-					menuTop = tabMenu.offset().top - 110,
+					menuTop = tabMenu.offset().top,
 					targetTop = $(window).scrollTop();
 			if(menuTop < targetTop){
 					tabMenu.addClass('fixed');

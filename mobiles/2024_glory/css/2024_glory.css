@@ -1,4 +1,7 @@
-/* 240322 잇올 대입 실적 2024  */
+/* ============================
+        2024 glory
+============================ */
+@import url('./../../../assets/css/reset.css');
 
 /* ===================================
 device width 721 이상인 경우 px 작업,
@@ -17,6 +20,9 @@ html{
 
 .gh_point_2024_contents{
 	overflow: hidden;
+	max-width: 720px;
+	margin-left: auto;
+	margin-right: auto;
 }
 .gh_point_2024_contents *{
 	font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -26,6 +32,8 @@ html{
 }
 .gh_point_2024_contents .mob_inner{
 	position: relative;
+	padding-left: 20px;
+	padding-right: 20px;
 }
 
 /* section common */
@@ -116,7 +124,7 @@ html{
 	transform: translate(-50%, -50%);
 	width: 100%;
 	height: 100%;
-	background: rgba(0,0,0,0.4) url('/img/suneung/glory_honor/2024_gh_sub2/ico_vod_play.png') no-repeat center / 75px;
+	background: rgba(0,0,0,0.4) url('../images/ico_vod_play.png') no-repeat center / 75px;
 }
 .vod_link_wrap img{
 	width: 100%;
@@ -136,8 +144,9 @@ html{
 }
 .main_visual_wrap{
 	height: 138.8889vw;
-	padding-top: 11.1111vw;
-	background: url('/img/suneung/glory_honor/2024_gh_sub2/bg_main_visual.png') no-repeat top center / cover;
+	max-height: 1001px;
+	padding-top: 80px;
+	background: url('../images/bg_main_visual.png') no-repeat top center / cover;
 }
 .main_tit_wrap{
 	text-align: center;
@@ -147,7 +156,7 @@ html{
 }
 
 .lyrics_wrap{
-	margin: 3.3333vw auto 0;
+	margin: 24px auto 0;
 }
 .lyrics_count{
 	width: 350px;
@@ -182,7 +191,7 @@ html{
 	left: 0;
 	width: 0;
 	height: 71px;
-	background: url('/img/suneung/glory_honor/2024_gh_sub2/img_main_lyric_1_on.png') top left / cover;
+	background: url('../images/img_main_lyric_1_on.png') top left / cover;
 	-webkit-transform-style: preserve-3d;
 	-webkit-backface-visibility: hidden;
 	-webkit-transform: translate3d(0, 0, 0);
@@ -201,7 +210,7 @@ html{
 
 .main_contents{
 	margin-top: -2.2vw;
-	background: url('/img/suneung/glory_honor/2024_gh_sub2/bg_main_info.png') no-repeat top center / cover;
+	background: url('../images/bg_main_info.png') no-repeat top center / cover;
 }
 .main_contents .mob_inner{
 	padding-left: 10px;
@@ -254,7 +263,7 @@ html{
 }
 .navi_wrap.fixed .navi_menu{
 	position: fixed;
-	top: 111px;
+	top: 0;
 	left: 50%;
 	-webkit-transform: translateX(-50%);
 	transform: translateX(-50%);
@@ -313,7 +322,7 @@ html{
 .point_sec_01{
 	padding-top: 150px;
 	padding-bottom: 70px;
-	background-image: url('/img/suneung/glory_honor/2024_gh_sub2/bg_sec_01.png');
+	background-image: url('../images/bg_sec_01.png');
 }
 .point_sec_01:before{
 	background-color: #7c911e;
@@ -333,7 +342,7 @@ html{
 .point_sec_02{
 	padding-top: 188px;
 	padding-bottom: 40px;
-	background-image: url('/img/suneung/glory_honor/2024_gh_sub2/bg_sec_02.png');
+	background-image: url('../images/bg_sec_02.png');
 }
 .point_sec_02:before{
 	background-color: #e8c560;
@@ -353,7 +362,7 @@ html{
 .point_sec_03{
 	padding-top: 240px;
 	padding-bottom: 48px;
-	background-image: url('/img/suneung/glory_honor/2024_gh_sub2/bg_sec_03.png');
+	background-image: url('../images/bg_sec_03.png');
 }
 .point_sec_03:before{
 	background-color: #98ad3b;
@@ -378,7 +387,7 @@ html{
 .point_sec_04{
 	padding-top: 222px;
 	padding-bottom: 100px;
-	background-image: url('/img/suneung/glory_honor/2024_gh_sub2/bg_sec_04.png');
+	background-image: url('../images/bg_sec_04.png');
 }
 .point_sec_04:before{
 	background-color: #98ad3b;
@@ -422,13 +431,13 @@ html{
 	letter-spacing: -0.03em;
 }
 .ai_wrap .ai_question .ai_name strong{
-	background-image: url('/img/suneung/glory_honor/2024_gh_sub2/ico_ai_itall.png');
+	background-image: url('../images/ico_ai_itall.png');
 }
 .ai_wrap .ai_answer{
 	margin-top: 45px;
 }
 .ai_wrap .ai_answer .ai_name strong{
-	background-image: url('/img/suneung/glory_honor/2024_gh_sub2/ico_ai_gpt.png');
+	background-image: url('../images/ico_ai_gpt.png');
 }
 .ai_wrap ol{
 	margin-top: 40px;
@@ -600,7 +609,7 @@ body.ofh{
     width: 25px;
     height: 25px;
     border: 0;
-    background: transparent url('/img/suneung/glory_honor/2024_gh_sub2/ico_modal_close.png') no-repeat center;
+    background: transparent url('../images/ico_modal_close.png') no-repeat center;
     cursor: pointer;
 }
 
@@ -630,6 +639,10 @@ device width 720 이하인 경우 vw로 변환
 		margin-top: 2.7778vw;
 	}
 
+	.main_visual_wrap{
+		padding-top: 11.111vw;
+	}
+
 	.vod_link_wrap.type1{
 		margin-top: 5.5556vw;
 		margin-bottom: 4.1667vw;
@@ -649,7 +662,9 @@ device width 720 이하인 경우 vw로 변환
 		border-radius: 2.7778vw;
 	}
 
-
+	.lyrics_wrap{
+		margin: 3.3333vw auto 0;
+	}
 	.lyrics_count{
 		width: 48.6111vw;
 	}

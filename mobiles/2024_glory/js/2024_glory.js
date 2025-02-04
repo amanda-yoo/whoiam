@@ -23,9 +23,8 @@ function tabScroll(){
 	$(window).scroll(function(){
 		let tabMenu = $('.js_navi_wrap'),
 			menuTop = tabMenu.offset().top,
-			menuTop2 = menuTop - 111,
 			crtTop = $(window).scrollTop();
-		if(menuTop2 < crtTop){
+		if(menuTop < crtTop){
 			tabMenu.addClass('fixed');
 		}else{
 			tabMenu.removeClass('fixed');

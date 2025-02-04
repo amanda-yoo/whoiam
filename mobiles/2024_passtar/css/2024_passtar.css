@@ -1,9 +1,11 @@
-/* =========================================
-            2024 itall passtar
-========================================= */
+/* ============================
+        2024 passtar
+============================ */
+@import url('./../../../assets/css/reset.css');
+
 @font-face {
 	font-family: 'ONE-Mobile-POP';
-	src: url('/img/fonts/ONE-Mobile-POP.woff') format('woff');
+	src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/ONE-Mobile-POP.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -21,6 +23,9 @@ body.ofh{
 /* layout */
 .passtar_2024_contents{
 	overflow-x: hidden;
+	max-width: 720px;
+	margin-left: auto;
+	margin-right: auto;
 }
 .passtar_2024_contents *{
 	font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -171,7 +176,7 @@ a{
 .passtar_main_sec{
 	padding: 16.08vw 0 11.25vw;
 	position: relative;
-	background-image: url('/img/suneung/event/2024_itallpasstar/main_bg.png');
+	background-image: url('../images/main_bg.png');
 }
 .passtar_main_sec:before{
 	display: block;
@@ -182,7 +187,7 @@ a{
 	width: 100%;
 	height: 100%;
 	margin: 0 auto;
-	background: url('/img/suneung/event/2024_itallpasstar/main_star.png') no-repeat top center / contain;
+	background: url('../images/main_star.png') no-repeat top center / contain;
 	opacity: 0;
 	animation: mainStar 1.5s infinite;
 }
@@ -196,7 +201,7 @@ a{
 	transform: translateX(-50%);
 	width: 100%;
 	height: 34vw;
-	background: url('/img/suneung/event/2024_itallpasstar/main_balloon.png') no-repeat top center / contain;
+	background: url('../images/main_balloon.png') no-repeat top center / contain;
 	animation: mainBalloon 3s infinite linear;
 }
 @keyframes mainStar{
@@ -217,7 +222,7 @@ a{
 }
 .passtar_main_sec .sub_tit_wrap{
 	margin: 25px 0 30px;
-	background: url('/img/suneung/event/2024_itallpasstar/main_sub_tit_bg.png') no-repeat top center / contain;
+	background: url('../images/main_sub_tit_bg.png') no-repeat top center / contain;
 	text-align: center;
 }
 .passtar_main_sec .sub_tit_wrap strong{
@@ -238,7 +243,7 @@ a{
 	right: -2%;
 	width: 12.66vw;
 	height: 12.41vw;
-	background: url('/img/suneung/event/2024_itallpasstar/main_obj_smile.png') no-repeat center / contain;
+	background: url('../images/main_obj_smile.png') no-repeat center / contain;
 }
 .kit_wrap img{
 	max-width: 100%;
@@ -272,7 +277,7 @@ a{
 	transform: translateX(-50%);
 	width: 60px;
 	height: 60px;
-	background-image: url('/img/suneung/event/2024_itallpasstar/sec_01_tit_obj.png');
+	background-image: url('../images/sec_01_tit_obj.png');
 	background-repeat: no-repeat;
 	background-position: top center;
 	background-size: contain;
@@ -297,7 +302,7 @@ font-family: 'ONE-Mobile-POP';
 }
 .tab_wrap.fixed .tab_menu{
 	position: fixed;
-	top: 111px;
+	top: 0;
 left: 50%;
 -webkit-transform: translateX(-50%);
 transform: translateX(-50%);
@@ -372,7 +377,7 @@ max-width: 720px;
 	right: 20px;
 	width: 14px;
 	height: 12px;
-	background: url('/img/suneung/event/2024_itallpasstar/ico_accodion.png') no-repeat center / contain;
+	background: url('../images/ico_accodion.png') no-repeat center / contain;
 	-webkit-transition: transform 0.3s;
 	transition: transform 0.3s;
 }
@@ -455,7 +460,7 @@ max-width: 720px;
 
 /* section 1 합격축하 */
 .passtar_sec_01{
-	background-image: url('/img/suneung/event/2024_itallpasstar/sec_01_bg.png');
+	background-image: url('../images/sec_01_bg.png');
 }
 .passtar_sec_01 .sec_wrap{
 	margin-top: 60px;
@@ -465,17 +470,17 @@ max-width: 720px;
 }
 .passtar_sec_01 .btn_click{
 	background-color: #278aef;
-	background-image: url('/img/suneung/event/2024_itallpasstar/btn_click_01.png');
+	background-image: url('../images/btn_click_01.png');
 }
 
 
 
 /* section 2 합격비결 */
 .passtar_sec_02{
-	background-image: url('/img/suneung/event/2024_itallpasstar/sec_02_bg.png');
+	background-image: url('../images/sec_02_bg.png');
 }
 .passtar_sec_02 .sec_tit_wrap:before{
-	background-image: url('/img/suneung/event/2024_itallpasstar/sec_02_tit_obj.png');
+	background-image: url('../images/sec_02_tit_obj.png');
 }
 .passtar_sec_02 .color_key{
 	color: #6c00ff
@@ -561,7 +566,7 @@ max-width: 720px;
 	left: 14px;
 	width: 60px;
 	height: 60px;
-	background: url('/img/suneung/event/2024_itallpasstar/sec_02_label_04.png') no-repeat left top / contain;
+	background: url('../images/sec_02_label_04.png') no-repeat left top / contain;
 	font-size: 22px;
 	color: #fff;
 	font-family: 'ONE-Mobile-POP';
@@ -571,13 +576,13 @@ max-width: 720px;
 	box-sizing: border-box;
 }
 .gift_list li:nth-child(1) .label{
-	background-image: url('/img/suneung/event/2024_itallpasstar/sec_02_label_01.png');
+	background-image: url('../images/sec_02_label_01.png');
 }
 .gift_list li:nth-child(2) .label{
-	background-image: url('/img/suneung/event/2024_itallpasstar/sec_02_label_02.png');
+	background-image: url('../images/sec_02_label_02.png');
 }
 .gift_list li:nth-child(3) .label{
-	background-image: url('/img/suneung/event/2024_itallpasstar/sec_02_label_03.png');
+	background-image: url('../images/sec_02_label_03.png');
 }
 .gift_list .img_wrap{
 	text-align: center;
@@ -602,7 +607,7 @@ max-width: 720px;
 
 .passtar_sec_02 .btn_click{
 	background-color: #8444d9;
-	background-image: url('/img/suneung/event/2024_itallpasstar/btn_click_02.png');
+	background-image: url('../images/btn_click_02.png');
 }
 
 .passtar_sec_02 .info_wrap dt strong{
@@ -613,10 +618,10 @@ max-width: 720px;
 
 /* section 3 다관왕축하 */
 .passtar_sec_03{
-	background-image: url('/img/suneung/event/2024_itallpasstar/sec_03_bg.png');
+	background-image: url('../images/sec_03_bg.png');
 }
 .passtar_sec_03 .sec_tit_wrap:before{
-	background-image: url('/img/suneung/event/2024_itallpasstar/sec_03_tit_obj.png');
+	background-image: url('../images/sec_03_tit_obj.png');
 }
 .passtar_sec_03 .color_key{
 	color: #ff4848;
@@ -641,7 +646,7 @@ max-width: 720px;
 
 .passtar_sec_03 .btn_click{
 	background-color: #ee3e3e;
-	background-image: url('/img/suneung/event/2024_itallpasstar/btn_click_03.png');
+	background-image: url('../images/btn_click_03.png');
 }
 
 .passtar_sec_03 .info_wrap dt strong{
@@ -652,10 +657,10 @@ max-width: 720px;
 
 /* section 4 꿈키 */
 .passtar_sec_04{
-	background-image: url('/img/suneung/event/2024_itallpasstar/sec_04_bg.png');
+	background-image: url('../images/sec_04_bg.png');
 }
 .passtar_sec_04 .sec_tit_wrap:before{
-	background-image: url('/img/suneung/event/2024_itallpasstar/sec_04_tit_obj.png');
+	background-image: url('../images/sec_04_tit_obj.png');
 }
 .passtar_sec_04 .color_key{
 	color: #0f9b12;
@@ -672,7 +677,7 @@ max-width: 720px;
 
 .passtar_sec_04 .btn_click{
 	background-color: #2dab30;
-	background-image: url('/img/suneung/event/2024_itallpasstar/btn_click_04.png');
+	background-image: url('../images/btn_click_04.png');
 }
 
 .passtar_sec_04 .info_wrap dt strong{
@@ -695,7 +700,7 @@ max-width: 720px;
 	height: 20px;
 	top: 15px;
 	right: 15px;
-	background-image: url('/img/suneung/event/2024_itallpasstar/ico_close_black.png');
+	background-image: url('../images/ico_close_black.png');
 }
 .pop_contents.type1 .pop_tit_wrap strong,
 .pop_contents.type1 .pop_tit_wrap span{
@@ -736,7 +741,7 @@ max-width: 720px;
 /* section 5 */
 .passtar_sec_05{
 	padding: 70px 0;
-	background-image: url('/img/suneung/event/2024_itallpasstar/sec_05_bg.png');
+	background-image: url('../images/sec_05_bg.png');
 }
 .passtar_sec_05 .sec_wrap{
 	padding: 40px 36px;
@@ -757,7 +762,7 @@ max-width: 720px;
 	text-align: center;
 }
 .passtar_sec_05 .btn_click{
-	background-image: url('/img/suneung/event/2024_itallpasstar/btn_click_05.png');
+	background-image: url('../images/btn_click_05.png');
 	animation: none;
 }
 .passtar_sec_05 .btn_click span:before{
@@ -768,7 +773,7 @@ max-width: 720px;
 	left: 10px;
 	width: 16px;
 	height: 20px;
-	background-image: url('/img/suneung/event/2024_itallpasstar/ico_share.png');
+	background-image: url('../images/ico_share.png');
 	background-size: contain;
 }
 
@@ -794,14 +799,14 @@ max-width: 720px;
 }
 .btn_sns_share{
 	padding: 84px 12px 0;
-	background: url('/img/suneung/event/2024_itallpasstar/btn_kakao.png') no-repeat top center / 73px;
+	background: url('../images/btn_kakao.png') no-repeat top center / 73px;
 	font-size: 16px;
 	font-weight: 500;
 	color: #bebebe;
 }
 .btn_sns_share + .btn_sns_share{
 	margin-left: 46px;
-	background: url('/img/suneung/event/2024_itallpasstar/btn_link.png') no-repeat top center / 73px;
+	background: url('../images/btn_link.png') no-repeat top center / 73px;
 }
 
 
@@ -826,7 +831,7 @@ max-width: 720px;
 	height: 16px;
 	top: -4px;
 	right: 0px;
-	background-image: url('/img/suneung/event/2024_itallpasstar/ico_close.png');
+	background-image: url('../images/ico_close.png');
 	background-size: contain;
 }
 
@@ -834,7 +839,7 @@ max-width: 720px;
 /* footer */
 .passtar_footer.passtar_sec{
 	padding: 5.83vw 0;
-	background-image: url('/img/suneung/event/2024_itallpasstar/footer_bg.png');
+	background-image: url('../images/footer_bg.png');
 }
 .passtar_footer .img_wrap{
 	width: 34vw;

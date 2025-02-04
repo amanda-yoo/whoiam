@@ -1,5 +1,5 @@
 $(document).ready(function(){
-	$('img[usemap]').rwdImageMaps(); // image map
+	// $('img[usemap]').rwdImageMaps(); // image map
 	$('.js_tab_menu').length && tabScroll(); // tab scroll
 	$('.js_tab_wrap').length && mainMenu(); // main menu
 	$('.js_acco_con').length && accodion(); // accodion
@@ -11,12 +11,12 @@ $(document).ready(function(){
 // tab scroll event
 function tabScroll(){
 	$('.js_tab_menu li a').on('click', function(){
-			var targetId = $(this).data('name'),
-					targetSec = $('#' + targetId).offset().top;
-			$('html').animate({
-					scrollTop : targetSec
-			}, '2000');
-			return false;
+		var targetId = $(this).data('name'),
+			targetSec = $('#' + targetId).offset().top;
+		$('html').animate({
+			scrollTop : targetSec
+		}, '2000');
+		return false;
 	})
 }
 

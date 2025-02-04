@@ -1,6 +1,7 @@
-/* =================================
-		2025 medical
-=================================*/
+/* ============================
+        2024 medical
+============================ */
+@import url('./../../../assets/css/reset.css');
 
 /* ======================================== [ common ] ======================================== */
 html{
@@ -13,6 +14,9 @@ html{
 .img_wrap{
     font-size: 0;
     text-align: center;
+}
+.img_wrap img{
+	max-width: 100%;
 }
 .color_yellow{
 	color: #f6ab00 !important;
@@ -129,7 +133,7 @@ a.btn, button.btn{
 	width: 100%;
 	height: 100%;
 	background-color: rgba(0,0,0,0.4);
-	background-image: url('/img/suneung/recruit/2025_medical/ico_vod_play.png');
+	background-image: url('../images/ico_vod_play.png');
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: 51px;
@@ -195,6 +199,9 @@ a.btn, button.btn{
 /* layout */
 .med_2025_contents{
     overflow: hidden;
+		max-width: 720px;
+		margin-left: auto;
+		margin-right: auto;
 }
 .med_2025_contents *{
 	color: #222;
@@ -261,6 +268,9 @@ a.btn, button.btn{
 
 
 /* ======================================== [ main section ] ======================================== */
+.med_main_sec img{
+	max-width: 100%;
+}
 .btn_quick_form{
 	position: fixed;
 	top: 35%;
@@ -279,7 +289,7 @@ a.btn, button.btn{
 }
 .med_main_sec{
 	padding-bottom: 0;
-	background-image: url('/img/suneung/recruit/2025_medical/bg_main_sec.png');
+	background-image: url('../images/bg_main_sec.png');
 	background-position: center;
 }
 
@@ -288,7 +298,7 @@ a.btn, button.btn{
 /* ======================================== [ section 1 / 9개월만에 표준점수 52점 상승 ] ======================================== */
 .med_sec_01{
 	padding-bottom: 34px;
-	background-image: url('/img/suneung/recruit/2025_medical/bg_sec_01.png');
+	background-image: url('../images/bg_sec_01.png');
 }
 .med_sec_01 .bg_box{
 	border: 3px solid #494949;
@@ -303,12 +313,12 @@ a.btn, button.btn{
 	padding-bottom: 80px;
 }
 .med_sec_01 .item_mid .desc_wrap{
-	background-image: url('/img/suneung/recruit/2025_medical/img_sec_01_line1.png');
+	background-image: url('../images/img_sec_01_line1.png');
 	background-repeat: no-repeat;
 	background-position: 80px 36px;
 }
 .med_sec_01 .item_btm .desc_wrap{
-	background: url('/img/suneung/recruit/2025_medical/img_sec_01_line2.png');
+	background: url('../images/img_sec_01_line2.png');
 	background-repeat: no-repeat;
 	background-position: 18px 36px;
 }
@@ -324,7 +334,7 @@ a.btn, button.btn{
 	right: 100px;
 	width: 257px;
 	height: 126px;
-	background-image: url('/img/suneung/recruit/2025_medical/img_sec_01_btm_bubble.png');
+	background-image: url('../images/img_sec_01_btm_bubble.png');
 	background-size: contain;
 	background-repeat: no-repeat;
 } */
@@ -398,7 +408,7 @@ a.btn, button.btn{
 
 .med_sec_02 .item_mid .tit{
 	padding: 18px 0 6px;
-	background-image: url('/img/suneung/recruit/2025_medical/img_sec_02_line1.png');
+	background-image: url('../images/img_sec_02_line1.png');
 	background-repeat: no-repeat;
 	background-position: right 52px bottom 0;
 }
@@ -411,7 +421,7 @@ a.btn, button.btn{
 }
 
 .med_sec_02 .item_btm .tit{
-	background-image: url('/img/suneung/recruit/2025_medical/img_sec_02_line2.png');
+	background-image: url('../images/img_sec_02_line2.png');
 	background-repeat: no-repeat;
 	background-position: left 78px bottom 0;
 }
@@ -432,7 +442,7 @@ a.btn, button.btn{
 	background-color: #2d2d2d;
 }
 .med_sec_03 .item_wrap:before{
-	background-image: url('/img/suneung/recruit/2025_medical/img_sec_03_label.png');
+	background-image: url('../images/img_sec_03_label.png');
 }
 .med_sec_03 .item_top .con_wrap{
 	margin-top: 75px;
@@ -443,6 +453,9 @@ a.btn, button.btn{
 
 .item_tit_wrap{
 	text-align: center;
+}
+.item_tit_wrap img{
+	max-width: 100%;
 }
 .item_tit_wrap .desc_wrap{
 	margin-top: 60px;
@@ -473,7 +486,7 @@ a.btn, button.btn{
 	right: -75px;
 	width: 70px;
 	height: 66px;
-	background-image: url('/img/suneung/recruit/2025_medical/ico_doodle.png');
+	background-image: url('../images/ico_doodle.png');
 	background-repeat: no-repeat;
 	background-size: contain;
 }
@@ -481,33 +494,33 @@ a.btn, button.btn{
 .med_sec_03 .note_list_wrap li:nth-child(1) .list_img span{
 	padding-left: 10px;
 	padding-right: 10px;
-	background-image: url('/img/suneung/recruit/2025_medical/img_sec_03_mid_icon1.png');
+	background-image: url('../images/img_sec_03_mid_icon1.png');
 }
 .med_sec_03 .note_list_wrap li:nth-child(2) .list_img span{
-	background-image: url('/img/suneung/recruit/2025_medical/img_sec_03_mid_icon2.png');
+	background-image: url('../images/img_sec_03_mid_icon2.png');
 }
 .med_sec_03 .note_list_wrap li:nth-child(3) .list_img span{
-	background-image: url('/img/suneung/recruit/2025_medical/img_sec_03_mid_icon3.png');
+	background-image: url('../images/img_sec_03_mid_icon3.png');
 }
 .med_sec_03 .note_list_wrap li:nth-child(4) .list_img span{
-	background-image: url('/img/suneung/recruit/2025_medical/img_sec_03_mid_icon4.png');
+	background-image: url('../images/img_sec_03_mid_icon4.png');
 }
 
 .med_sec_03 .note_list_wrap li:nth-child(1) .list_con{
-	background-image: url('/img/suneung/recruit/2025_medical/img_sec_03_line1.png');
+	background-image: url('../images/img_sec_03_line1.png');
 	background-position: 130px 118px;
 }
 .med_sec_03 .note_list_wrap li:nth-child(2) .list_con{
-	background-image: url('/img/suneung/recruit/2025_medical/img_sec_03_line2.png');
+	background-image: url('../images/img_sec_03_line2.png');
 	background-position: 50px 118px;
 }
 .med_sec_03 .note_list_wrap li:nth-child(3) .list_con{
 	padding-right: 42px;
-	background-image: url('/img/suneung/recruit/2025_medical/img_sec_03_line3.png');
+	background-image: url('../images/img_sec_03_line3.png');
 	background-position: 48px 50px;
 }
 .med_sec_03 .note_list_wrap li:nth-child(4) .list_con{
-	background-image: url('/img/suneung/recruit/2025_medical/img_sec_03_line4.png');
+	background-image: url('../images/img_sec_03_line4.png');
 	background-position: 24px 118px;
 }
 
@@ -550,7 +563,7 @@ a.btn, button.btn{
 }
 .item_note_wrap.type1 .item_note:before,
 .item_note_wrap.type1 .item_note:after{
-	background-image: url('/img/suneung/recruit/2025_medical/ico_note_bg1.png');
+	background-image: url('../images/ico_note_bg1.png');
 }
 .item_note_wrap.type1 .list_con p{
 	color: #cdcdcd;
@@ -562,7 +575,7 @@ a.btn, button.btn{
 }
 .item_note_wrap.type2 .item_note:before, 
 .item_note_wrap.type2 .item_note:after{
-	background-image: url('/img/suneung/recruit/2025_medical/ico_note_bg2.png');
+	background-image: url('../images/ico_note_bg2.png');
 }
 .item_note_wrap.type2 .note_tit_wrap{
 	padding: 130px 40px 80px 40px;
@@ -599,7 +612,7 @@ a.btn, button.btn{
 .note_list_wrap li + li{
 	margin-top: 60px;
 	padding-top: 72px;
-	background: url('/img/suneung/recruit/2025_medical/img_sec_04_mid_dash.png') no-repeat top center / contain;
+	background: url('../images/img_sec_04_mid_dash.png') no-repeat top center / contain;
 }
 .note_list_wrap .list_img{
 	text-align: center;
@@ -645,13 +658,13 @@ a.btn, button.btn{
 
 /* ======================================== [ section 4 / N수/반수/직장인 ] ======================================== */
 .med_sec_04{
-	background-image: url('/img/suneung/recruit/2025_medical/bg_sec_04.png');
+	background-image: url('../images/bg_sec_04.png');
 }
 .med_sec_04 .item_wrap{
 	padding-top: 70px;
 }
 .med_sec_04 .item_wrap:before{
-	background-image: url('/img/suneung/recruit/2025_medical/img_sec_04_label.png');
+	background-image: url('../images/img_sec_04_label.png');
 }
 .med_sec_04 .item_tit_wrap{
 	position: relative;
@@ -680,15 +693,15 @@ a.btn, button.btn{
 	transform: translateX(-50%);
 	width: 487px;
 	height: 218px;
-	background: url('/img/suneung/recruit/2025_medical/img_sec_04_mid_stamp.png') no-repeat center / contain;
+	background: url('../images/img_sec_04_mid_stamp.png') no-repeat center / contain;
 }
 .med_sec_04 .note_tit_wrap .desc_wrap ul{
-	background: url('/img/suneung/recruit/2025_medical/img_sec_04_mid_dash.png') no-repeat top center / contain;
+	background: url('../images/img_sec_04_mid_dash.png') no-repeat top center / contain;
 }
 .med_sec_04 .note_tit_wrap .desc_wrap li{
 	padding: 10px 0;
 	padding-left: 46px;
-	background: url('/img/suneung/recruit/2025_medical/img_sec_04_mid_dash.png') no-repeat bottom center / contain;
+	background: url('../images/img_sec_04_mid_dash.png') no-repeat bottom center / contain;
 	text-align: left;
 }
 .med_sec_04 .note_tit_wrap .desc_wrap li:nth-child(-n+3){
@@ -697,7 +710,7 @@ a.btn, button.btn{
 .med_sec_04 .note_tit_wrap .desc_wrap p{
 	margin-top: 0;
 	padding-left: 35px;
-	background-image: url('/img/suneung/recruit/2025_medical/ico_check_yellow.png');
+	background-image: url('../images/ico_check_yellow.png');
 	background-repeat: no-repeat;
 	background-position: left center;
 	background-size: 22px;
@@ -707,24 +720,24 @@ a.btn, button.btn{
 	margin-top: 0;
 }
 .med_sec_04 .note_list_wrap li:nth-child(1) .list_img span{
-	background-image: url('/img/suneung/recruit/2025_medical/img_sec_04_mid_icon1.png');
+	background-image: url('../images/img_sec_04_mid_icon1.png');
 }
 .med_sec_04 .note_list_wrap li:nth-child(2) .list_img span{
-	background-image: url('/img/suneung/recruit/2025_medical/img_sec_04_mid_icon2.png');
+	background-image: url('../images/img_sec_04_mid_icon2.png');
 }
 .med_sec_04 .note_list_wrap li:nth-child(3) .list_img span{
-	background-image: url('/img/suneung/recruit/2025_medical/img_sec_04_mid_icon3.png');
+	background-image: url('../images/img_sec_04_mid_icon3.png');
 }
 .med_sec_04 .note_list_wrap li:nth-child(1) .list_con{
-	background-image: url('/img/suneung/recruit/2025_medical/img_sec_04_line1.png');
+	background-image: url('../images/img_sec_04_line1.png');
 	background-position: right 100px top 42px;
 }
 .med_sec_04 .note_list_wrap li:nth-child(2) .list_con{
-	background-image: url('/img/suneung/recruit/2025_medical/img_sec_04_line2.png');
+	background-image: url('../images/img_sec_04_line2.png');
 	background-position: 80px 40px;
 }
 .med_sec_04 .note_list_wrap li:nth-child(3) .list_con{
-	background-image: url('/img/suneung/recruit/2025_medical/img_sec_04_line3.png');
+	background-image: url('../images/img_sec_04_line3.png');
 	background-position: 28px 112px;
 }
 
@@ -743,6 +756,9 @@ a.btn, button.btn{
 	margin-left: 30px;
 }
 
+.review_wrap img{
+	max-width: 100%;
+}
 .review_wrap.n2 .review_conbox{
 	margin-top: 30px;
 }
@@ -758,7 +774,7 @@ a.btn, button.btn{
 	background-color: #f6ab00;
 }
 .med_sec_05 .item_wrap:before{
-	background-image: url('/img/suneung/recruit/2025_medical/img_sec_05_label.png');
+	background-image: url('../images/img_sec_05_label.png');
 }
 .med_sec_05 .item_mid{
 	margin-top: 80px;
@@ -771,32 +787,32 @@ a.btn, button.btn{
 }
 .med_sec_05 .item_note_wrap.type1 .item_note:before, 
 .med_sec_05 .item_note_wrap.type1 .item_note:after{
-	background-image: url('/img/suneung/recruit/2025_medical/ico_note_bg3.png');
+	background-image: url('../images/ico_note_bg3.png');
 }
 .med_sec_05 .note_list_wrap li .list_img span{
 	padding-top: 124px;
 	background-position: top center;
 }
 .med_sec_05 .note_list_wrap li:nth-child(1) .list_img span{
-	background-image: url('/img/suneung/recruit/2025_medical/img_sec_05_mid_icon1.png');
+	background-image: url('../images/img_sec_05_mid_icon1.png');
 }
 .med_sec_05 .note_list_wrap li:nth-child(2) .list_img span{
-	background-image: url('/img/suneung/recruit/2025_medical/img_sec_05_mid_icon2.png');
+	background-image: url('../images/img_sec_05_mid_icon2.png');
 }
 .med_sec_05 .note_list_wrap li:nth-child(3) .list_img span{
-	background-image: url('/img/suneung/recruit/2025_medical/img_sec_05_mid_icon3.png');
+	background-image: url('../images/img_sec_05_mid_icon3.png');
 }
 
 .med_sec_05 .note_list_wrap li:nth-child(1) .list_con{
-	background-image: url('/img/suneung/recruit/2025_medical/img_sec_05_line1.png');
+	background-image: url('../images/img_sec_05_line1.png');
 	background-position: 42px 34px;
 }
 .med_sec_05 .note_list_wrap li:nth-child(2) .list_con{
-	background-image: url('/img/suneung/recruit/2025_medical/img_sec_05_line2.png');
+	background-image: url('../images/img_sec_05_line2.png');
 	background-position: 140px 24px;
 }
 .med_sec_05 .note_list_wrap li:nth-child(3) .list_con{
-	background-image: url('/img/suneung/recruit/2025_medical/img_sec_05_line3.png');
+	background-image: url('../images/img_sec_05_line3.png');
 	background-position: right 86px bottom 66px;
 }
 
@@ -815,7 +831,7 @@ a.btn, button.btn{
 	left: 0;
 	width: 100%;
 	height: 1377px;
-	background: url('/img/suneung/recruit/2025_medical/bg_sec_06.png') no-repeat center / cover;
+	background: url('../images/bg_sec_06.png') no-repeat center / cover;
 }
 .med_sec_06 .item_tit_wrap .desc_wrap{
 	margin-top: 0;
@@ -826,7 +842,7 @@ a.btn, button.btn{
 	margin-top: 120px;
 }
 .med_sec_06 .item_btm .tit{
-	background-image: url('/img/suneung/recruit/2025_medical/tit_sec_06_2_bg.png');
+	background-image: url('../images/tit_sec_06_2_bg.png');
 	background-size: contain;
 }
 .med_sec_06 .item_btm .item_num_wrap .num_tit_wrap{
@@ -839,6 +855,9 @@ a.btn, button.btn{
 	margin-top: 20px;
 }
 
+.num_tit_wrap img{
+	max-width: 100%;
+}
 .item_num_wrap.type2 .num_tit_wrap{
 	margin-bottom: 60px;
 	text-align: center;
@@ -865,7 +884,7 @@ a.btn, button.btn{
 	background-color: #2d2d2d;
 }
 .med_sec_07 .item .tit{
-	background-image: url('/img/suneung/recruit/2025_medical/tit_sec_07_bg.png');
+	background-image: url('../images/tit_sec_07_bg.png');
 	background-size: contain;
 }
 .med_sec_07 .num_tit_wrap{
@@ -879,7 +898,7 @@ a.btn, button.btn{
 	right: -10px;
 	width: 125px;
 	height: 94px;
-	background: url('/img/suneung/recruit/2025_medical/img_sec_07_shot.png') no-repeat center / contain;
+	background: url('../images/img_sec_07_shot.png') no-repeat center / contain;
 }
 .med_sec_07 .num_tit_wrap .footnote_wrap{
 	margin-top: 30px;
@@ -900,6 +919,9 @@ a.btn, button.btn{
 .med_sec .swiper-slide{
 	background: none;
 }
+.med_sec .swiper-slide img{
+	max-width: 100%;
+}
 .med_sec .btn_arr{
 	display: block;
 	content: '';
@@ -914,11 +936,11 @@ a.btn, button.btn{
 }
 .med_sec .arr_prev{
 	left: 0;
-	background-image: url('/img/suneung/recruit/2025_medical/ico_swiper_arrow_prev.png');
+	background-image: url('../images/ico_swiper_arrow_prev.png');
 }
 .med_sec .arr_next{
 	right: 0;
-	background-image: url('/img/suneung/recruit/2025_medical/ico_swiper_arrow_next.png');
+	background-image: url('../images/ico_swiper_arrow_next.png');
 }
 .med_sec .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, 
 .med_sec .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet{
@@ -942,7 +964,7 @@ a.btn, button.btn{
 /* ======================================== [ section 8 / 잇올랩 3 - 4단계 밀착 관리 ] ======================================== */
 .med_sec_08{
 	padding: 140px 0 130px;
-	background-image: url('/img/suneung/recruit/2025_medical/bg_sec_08.png');
+	background-image: url('../images/bg_sec_08.png');
 }
 .med_sec_08 .num_tit_wrap{
 	position: relative;
@@ -955,11 +977,11 @@ a.btn, button.btn{
 	left: -18px;
 	width: 680px;
 	height: 493px;
-	background-image: url('/img/suneung/recruit/2025_medical/tit_sec_08_obj.png');
+	background-image: url('../images/tit_sec_08_obj.png');
 	background-size: contain;
 }
 .med_sec_08 .item .tit{
-	background-image: url('/img/suneung/recruit/2025_medical/tit_sec_08_bg.png');
+	background-image: url('../images/tit_sec_08_bg.png');
 	background-size: contain;
 	text-shadow: 3px 0 18px #514730;
 }
@@ -973,7 +995,7 @@ a.btn, button.btn{
 .care_tit{
 	width: 476px;
 	padding: 15px 0;
-	background: url('/img/suneung/recruit/2025_medical/img_sec_08_care_tit.png') no-repeat top left / contain;
+	background: url('../images/img_sec_08_care_tit.png') no-repeat top left / contain;
 	text-align: left;
 }
 .care_tit span{
@@ -1017,7 +1039,7 @@ a.btn, button.btn{
 	left: 0;
 	width: 19px;
 	height: 23px;
-	background-image: url('/img/suneung/recruit/2025_medical/ico_check_sky.png');
+	background-image: url('../images/ico_check_sky.png');
 	background-size: contain;
 	background-repeat: no-repeat;
 }
@@ -1029,18 +1051,18 @@ a.btn, button.btn{
 	text-align: left;
 }
 .care_conbox:nth-child(1) .care_con{
-	background-image: url('/img/suneung/recruit/2025_medical/img_sec_08_care1.png');
+	background-image: url('../images/img_sec_08_care1.png');
 }
 .care_conbox:nth-child(2) .care_con{
-	background-image: url('/img/suneung/recruit/2025_medical/img_sec_08_care2.png');
+	background-image: url('../images/img_sec_08_care2.png');
 }
 .care_conbox:nth-child(4) .care_con{
 	padding-bottom: 280px;
-	background-image: url('/img/suneung/recruit/2025_medical/img_sec_08_care3.png');
+	background-image: url('../images/img_sec_08_care3.png');
 }
 .care_conbox:nth-child(5) .care_con{
 	padding-bottom: 280px;
-	background-image: url('/img/suneung/recruit/2025_medical/img_sec_08_care4.png');
+	background-image: url('../images/img_sec_08_care4.png');
 }
 .care_conbox + .img_wrap{
 	margin-top: 20px;
@@ -1075,7 +1097,7 @@ a.btn, button.btn{
 	transform: translateX(-50%);
 	width: 158px;
 	height: 38px;
-	background: url('/img/suneung/recruit/2025_medical/img_sec_09_clip.png') no-repeat top center / contain;
+	background: url('../images/img_sec_09_clip.png') no-repeat top center / contain;
 }
 .med_sec_09 .bg_box.apply_fin:after{
 	display: block;
@@ -1087,7 +1109,7 @@ a.btn, button.btn{
 	transform: translateX(-50%);
 	width: 80%;
 	height: 307px;
-	background: url('/img/suneung/recruit/2025_medical/img_fin_stamp1.png') no-repeat center / contain;
+	background: url('../images/img_fin_stamp1.png') no-repeat center / contain;
 }
 .med_sec_09 .tit_wrap{
 	text-align: center;
@@ -1158,7 +1180,7 @@ a.btn, button.btn{
 	right: -56px;
 	width: 369px;
 	height: 55px;
-	background-image: url('/img/suneung/recruit/2025_medical/img_sec_10_line.png');
+	background-image: url('../images/img_sec_10_line.png');
 	background-repeat: no-repeat;
 }
 .med_sec_10 .tit_wrap strong{
@@ -1493,7 +1515,7 @@ body.ofh{
 .modal_info_wrap + .modal_tit_wrap{
 	margin-top: 70px;
 	padding-top: 70px;
-	background: url('/img/suneung/recruit/2025_medical/ico_pop_dash.png') no-repeat top center / contain;
+	background: url('../images/ico_pop_dash.png') no-repeat top center / contain;
 }
 
 .modal_list_wrap dl + dl{
@@ -1556,7 +1578,7 @@ body.ofh{
 .modal_review_conbox{
 	margin-top: 50px;
 	padding-top: 50px;
-	background: url('/img/suneung/recruit/2025_medical/ico_pop_dash2.png') no-repeat top center / contain;
+	background: url('../images/ico_pop_dash2.png') no-repeat top center / contain;
 }
 .modal_review_conbox p{
 	font-size: 26px;
@@ -1613,7 +1635,7 @@ body.ofh{
 .modal_parents .btn_wrap + .modal_info_wrap,
 .modal_parents .modal_info_wrap + .modal_info_wrap{
 	padding-top: 70px;
-	background: url('/img/suneung/recruit/2025_medical/ico_pop_dash2.png') no-repeat top center / contain;
+	background: url('../images/ico_pop_dash2.png') no-repeat top center / contain;
 }
 .modal_parents .modal_review_conbox{
 	padding-top: 0;
@@ -1637,7 +1659,7 @@ body.ofh{
 	transform: translate(-50%,-50%);
 	width: 90%;
 	height: 260px;
-	background: url('/img/suneung/recruit/2025_medical/img_fin_stamp2.png') no-repeat center / contain;
+	background: url('../images/img_fin_stamp2.png') no-repeat center / contain;
 }
 
 .modal_wrap .course_list li{

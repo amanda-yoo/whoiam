@@ -1,6 +1,8 @@
 /* ============================
         2024 counting
 ============================ */
+@import url('./../../../assets/css/reset.css');
+
 /* font */
 @font-face {
 	font-family: 'IAMAPLAYER';
@@ -10,6 +12,12 @@
 }
 
 /* common */
+.count_container{
+	overflow: hidden;
+	max-width: 720px;
+	margin-left: auto;
+	margin-right: auto;
+}
 .text_center {
 text-align:center;
 }
@@ -30,7 +38,7 @@ text-align: center;
 .count_top_contents {
 padding-bottom:100px;
 background-color:#d04823;
-background-image:url('/img/suneung/glory_honor/2024_GH_Count/bg_top_visual_w.png');
+background-image:url('./../images/bg_top_visual_w.png');
 background-repeat:no-repeat;
 background-position:top center;
 }
@@ -122,7 +130,7 @@ clip-path:polygon(0 0,0 0,0 0);
 	height: 286px;
 /* padding:146px 50px 46px; */
 border-radius:14px;
-background-image:url('/img/suneung/glory_honor/2024_GH_Count/img_score1.png');
+background-image:url('./../images/img_score1.png');
 }
 .total_score .item .tick{
 	bottom: 16%;
@@ -150,14 +158,14 @@ width: 180px;
 margin-left: 12px;
 }
 .sub_score .item:nth-child(1) {
-background-image:url('/img/suneung/glory_honor/2024_GH_Count/img_score2.png');
+background-image:url('./../images/img_score2.png');
 }
 .sub_score .item:nth-child(2) {
-background-image:url('/img/suneung/glory_honor/2024_GH_Count/img_score3.png');
+background-image:url('./../images/img_score3.png');
 }
 .sub_score .item:nth-child(3) {
 	width: 222px;
-background-image:url('/img/suneung/glory_honor/2024_GH_Count/img_score4.png');
+background-image:url('./../images/img_score4.png');
 }
 .sub_score .item .tick{
 	width: 125px;
@@ -214,7 +222,7 @@ border-top: 0;
 @media screen and (max-width:720px) {
 .count_top_contents {
 	padding-bottom:13.8889vw;
-	background-image:url('/img/suneung/glory_honor/2024_GH_Count/bg_top_visual.png');
+	background-image:url('./../images/bg_top_visual.png');
 	background-size:contain;
 }
 .count_top_contents:before {

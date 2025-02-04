@@ -3,18 +3,17 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+	<title>2024 Counting</title>
+  <link rel="stylesheet" href="./css/2024_counting.css">
 </head>
 <body>
 	<div class="count_container">
-
-
 		<!-- top contents -->
 		<div class="count_top_contents">
 			<div class="mob_inner">
 				<!-- visual -->
 				<div class="count_visual_wrap">
-					<img src="/img/suneung/glory_honor/2024_GH_Count/img_top_visual.png" alt="">
+					<img src="./images/img_top_visual.png" alt="">
 				</div>
 				<!-- // visual -->
 
@@ -28,7 +27,7 @@
 								<span data-view="flip"></span>
 							</div>
 						</div>
-						<span id="crt_total_count"><%=fncGetPassCnt("2024", "1001,1002,1003,1004,1005,1006")%></span><!-- total count -->
+						<span id="crt_total_count">123456</span><!-- total count -->
 					</div>
 				</div>
 				<!-- // total count -->
@@ -41,7 +40,7 @@
 								<span data-view="flip"></span>
 							</div>
 						</div>
-						<span id="crt_sub_count_1"><%=fncGetPassCnt("2024", "1001")%></span><!-- 의치한약수 count -->
+						<span id="crt_sub_count_1">123</span><!-- 의치한약수 count -->
 					</div>
 					<div class="item">
 						<div class="tick" data-value="000" data-did-init="setupFlipSub2">
@@ -49,7 +48,7 @@
 								<span data-view="flip"></span>
 							</div>
 						</div>
-						<span id="crt_sub_count_2"><%=fncGetPassCnt("2024", "1002")%></span><!-- SKY카포 count -->
+						<span id="crt_sub_count_2">456</span><!-- SKY카포 count -->
 					</div>
 					<div class="item">
 						<div class="tick" data-value="0000" data-did-init="setupFlipSub3">
@@ -57,7 +56,7 @@
 								<span data-view="flip"></span>
 							</div>
 						</div>
-						<span id="crt_sub_count_3"><%=fncGetPassCnt("2024", "1003,1004")%></span><!-- 서성한이중경외시 count -->
+						<span id="crt_sub_count_3">789</span><!-- 서성한이중경외시 count -->
 					</div>
 				</div>
 				<!-- // sub count -->
@@ -67,8 +66,8 @@
 				<!-- text -->
 				<div class="top_txt_wrap" id="js_top_txt_wrap">
 					<div class="img_wrap">
-						<img src="/img/suneung/glory_honor/2024_GH_Count/img_txt1.png" alt="YOU ALL WINNER ITALLER">
-						<img src="/img/suneung/glory_honor/2024_GH_Count/img_txt2.png" alt="잇올이 선도하는 투명한 합격 데이터를 확인해보세요!">
+						<img src="./images/img_txt1.png" alt="YOU ALL WINNER ITALLER">
+						<img src="./images/img_txt2.png" alt="잇올이 선도하는 투명한 합격 데이터를 확인해보세요!">
 					</div>
 				</div>
 				<!-- // text -->
@@ -104,62 +103,18 @@
 
 		<!-- banner -->
 		<!-- <div class="gh_banner">
-			<img src="/img/suneung/glory_honor/2024_GH_Count/gh_banner.png" alt="">
+			<img src="./images/gh_banner.png" alt="">
 		</div> -->
 		<!-- // banner -->
 
-		<% Response.Flush %>
-
 		<!-- table contents -->
 		<div class="count_table_contents">
-			<!-- table -->
-			<div class="hapgyuks_wrap_7" style="margin-bottom: 0; position: relative;">
-				<div class="hapgyuks_7">
-					<div style="text-align:left;">
-						<div id="id_PR_TERM" style="float:left; padding-right: 10px; display: none;"></div>
-						<div id="id_PMB_DIV"></div>
-					</div>
-
-					<div id="id_PR_PMB_1001_Loading" style="display:none; position:absolute;">
-						<img src="/img/common/loading.gif" width="50" alt="" align="middle" />
-					</div>
-					<div id="id_PR_PMB_1001" class="cls_PR_PMB" style="display:none;"></div>
-					<div id="id_PR_PMB_1001_Flag" style="display:none;"></div>
-
-					<div id="id_PR_PMB_1002_Loading" style="display:none; position:absolute;">
-						<img src="/img/common/loading.gif" width="50" alt="" align="middle" />
-					</div>
-					<div id="id_PR_PMB_1002" class="cls_PR_PMB" style="display:none;"></div>
-					<div id="id_PR_PMB_1002_Flag" style="display:none;"></div>
-
-					<div id="id_PR_PMB_1003_Loading" style="display:none; position:absolute;">
-						<img src="/img/common/loading.gif" width="50" alt="" align="middle" />
-					</div>
-					<div id="id_PR_PMB_1003" class="cls_PR_PMB" style="display:none;"></div>
-					<div id="id_PR_PMB_1003_Flag" style="display:none;"></div>
-
-					<div id="id_PR_PMB_1004_Loading" style="display:none; position:absolute;">
-						<img src="/img/common/loading.gif" width="50" alt="" align="middle" />
-					</div>
-					<div id="id_PR_PMB_1004" class="cls_PR_PMB" style="display:none;"></div>
-					<div id="id_PR_PMB_1004_Flag" style="display:none;"></div>
-
-					<div id="id_PR_PMB_1005_Loading" style="display:none; position:absolute;">
-						<img src="/img/common/loading.gif" width="50" alt="" align="middle" />
-					</div>
-					<div id="id_PR_PMB_1005" class="cls_PR_PMB" style="display:none;"></div>
-					<div id="id_PR_PMB_1005_Flag" style="display:none;"></div>
-
-					<div id="id_PR_PMB_1006_Loading" style="display:none; position:absolute;">
-						<img src="/img/common/loading.gif" width="50" alt="" align="middle" />
-					</div>
-					<div id="id_PR_PMB_1006" class="cls_PR_PMB" style="display:none;"></div>
-					<div id="id_PR_PMB_1006_Flag" style="display:none;"></div>
-				</div>
-			</div>
-			<!-- // table -->
 		</div>
 		<!-- // table contents -->
 	</div>
+
+	<script src="../../assets/js/jquery-3.6.1.min.js"></script>
+  <script src="./js/flip.min.js"></script>
+  <script src="./js/2024_counting.js"></script>
 </body>
 </html>

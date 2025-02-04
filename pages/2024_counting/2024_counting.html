@@ -3,7 +3,8 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+	<title>2024 Counting</title>
+  <link rel="stylesheet" href="./css/2024_counting.css">
 </head>
 <body>
 	<div class="count_container">
@@ -12,8 +13,8 @@
 			<!-- text -->
 			<div class="top_txt_wrap" id="js_top_txt_wrap">
 				<div class="img_wrap">
-					<img src="/img/suneung/glory_honor/2024_GH_Count/new/img_txt1.png" alt="YOU ALL WINNER ITALLER">
-					<img src="/img/suneung/glory_honor/2024_GH_Count/new/img_txt2.png" alt="잇올의 투명한 합격 데이터를 지금 공개합니다!">
+					<img src="./images/img_txt1.png" alt="YOU ALL WINNER ITALLER">
+					<img src="./images/img_txt2.png" alt="잇올의 투명한 합격 데이터를 지금 공개합니다!">
 				</div>
 			</div>
 			<!-- // text -->
@@ -28,7 +29,7 @@
 								<span data-view="flip"></span>
 							</div>
 						</div>
-						<span id="crt_total_count"><%=fncGetPassCnt("2024", "1001,1002,1003,1004,1005,1006")%></span><!-- total count -->
+						<span id="crt_total_count">123456</span><!-- total count -->
 					</div>
 				</div>
 				<!-- // total count -->
@@ -41,7 +42,7 @@
 								<span data-view="flip"></span>
 							</div>
 						</div>
-						<span id="crt_sub_count_1"><%=fncGetPassCnt("2024", "1001")%></span><!-- 의치한약수 count -->
+						<span id="crt_sub_count_1">123</span><!-- 의치한약수 count -->
 					</div>
 					<div class="item">
 						<div class="tick" data-value="000" data-did-init="setupFlipSub2">
@@ -49,7 +50,7 @@
 								<span data-view="flip"></span>
 							</div>
 						</div>
-						<span id="crt_sub_count_2"><%=fncGetPassCnt("2024", "1002")%></span><!-- SKY카포 count -->
+						<span id="crt_sub_count_2">456</span><!-- SKY카포 count -->
 					</div>
 					<div class="item">
 						<div class="tick" data-value="0000" data-did-init="setupFlipSub3">
@@ -57,7 +58,7 @@
 								<span data-view="flip"></span>
 							</div>
 						</div>
-						<span id="crt_sub_count_3"><%=fncGetPassCnt("2024", "1003,1004")%></span><!-- 서성한이중경외시 count -->
+						<span id="crt_sub_count_3">789</span><!-- 서성한이중경외시 count -->
 					</div>
 				</div>
 				<!-- // sub count -->
@@ -66,17 +67,11 @@
 
 			<!-- visual -->
 			<div class="count_visual_wrap" id="js_visual_wrap">
-				<img src="/img/suneung/glory_honor/2024_GH_Count/new/img_top_visual.png" alt="">
+				<img src="./images/img_top_visual.png" alt="">
 			</div>
 			<!-- // visual -->
 		</div>
 		<!-- // count top -->
-
-		<!-- banner -->
-		<!-- <div class="gh_banner">
-			<img src="/img/suneung/glory_honor/2024_GH_Count/gh_banner.png" alt="">
-		</div> -->
-		<!-- // banner -->
 
 		<!-- table contents -->
 		<div class="count_table_contents">
@@ -91,5 +86,9 @@
 		</div>
 		<!-- // table contents -->
 	</div>
+
+  <script src="../../assets/js/jquery-3.6.1.min.js"></script>
+  <script src="./js/flip.min.js"></script>
+  <script src="./js/2024_counting.js"></script>
 </body>
 </html>
