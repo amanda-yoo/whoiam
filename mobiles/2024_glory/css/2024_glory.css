@@ -209,8 +209,11 @@ html{
 }
 
 .main_contents{
-	margin-top: -2.2vw;
+	margin-top: -20px;
 	background: url('../images/bg_main_info.png') no-repeat top center / cover;
+}
+@media screen and (max-width: 720px){
+	.main_contents{margin-top: -2.2vw;}
 }
 .main_contents .mob_inner{
 	padding-left: 10px;

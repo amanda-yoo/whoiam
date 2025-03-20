@@ -85,7 +85,7 @@ a{
 }
 .btn_click{
 	width: 564px;
-	padding: 35px 0;
+	padding: 38px 0;
 	border-radius: 55px;
 	background-color: #333;
 	background-repeat: no-repeat;
@@ -241,7 +241,7 @@ a{
 }
 .passtar_main_sec .sub_tit_wrap strong{
 	display: inline-block;
-	padding: 38px 62.5px 52px;
+	padding: 38px 62.5px 60px;
 	background-image: url('../images/main_sub_tit_bg.png');
 	background-repeat: no-repeat;
 	font-size: 55px;
@@ -563,7 +563,7 @@ font-family: 'ONE-Mobile-POP';
 }
 .tab_menu li a{
 	display: block;
-	padding: 37px 0;
+	padding: 40px 0;
 	font-size: 42px;
 	color: #fff;
 font-family: 'ONE-Mobile-POP';
@@ -1097,6 +1097,10 @@ padding: 50px;
 .btn_sns_share + .btn_sns_share{
 	margin-left: 90px;
 	background: url('../images/btn_link.png') no-repeat top center;
+}
+.btn_sns_share:hover{
+	opacity: 1;
+	color: #bebebe;
 }
 
 

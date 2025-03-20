@@ -242,6 +242,7 @@ a{
 	top: -10%;
 	right: -2%;
 	width: 12.66vw;
+	max-width: 100px;
 	height: 12.41vw;
 	background: url('../images/main_obj_smile.png') no-repeat center / contain;
 }
@@ -554,7 +555,7 @@ max-width: 720px;
 	margin-top: 0;
 }
 .gift_list .gift_top{
-	padding: 24px 14px 18px;
+	padding: 24px 10px 18px;
 	position: relative;
 }
 .gift_list .label{
@@ -807,6 +808,9 @@ max-width: 720px;
 .btn_sns_share + .btn_sns_share{
 	margin-left: 46px;
 	background: url('../images/btn_link.png') no-repeat top center / 73px;
+}
+.btn_sns_share:hover{
+	color: #bebebe;
 }
 
 

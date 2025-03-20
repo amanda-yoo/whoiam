@@ -5,64 +5,64 @@
 	const txtWrap = document.getElementById('js_top_txt_wrap');
 
     // scroll event
-	window.addEventListener('scroll', function(){
-		let visualTop = visualWrap.getBoundingClientRect().top + window.scrollY;
-		let txtTop = txtWrap.getBoundingClientRect().top + window.scrollY;
-		let crtTop = document.documentElement.scrollTop;
-		let browserWidth = (window.innerWidth || self.innerWidth || document.documentElement.clientWidth || document.body.clientWidth);
-		// console.log('crt top : ' + crtTop + ', score top : ' + scoreTop + ', txt Top : ' + txtTop);
+	// window.addEventListener('scroll', function(){
+	// 	let visualTop = visualWrap.getBoundingClientRect().top + window.scrollY;
+	// 	let txtTop = txtWrap.getBoundingClientRect().top + window.scrollY;
+	// 	let crtTop = document.documentElement.scrollTop;
+	// 	let browserWidth = (window.innerWidth || self.innerWidth || document.documentElement.clientWidth || document.body.clientWidth);
+	// 	// console.log('crt top : ' + crtTop + ', score top : ' + scoreTop + ', txt Top : ' + txtTop);
 
-		// total
-		if(1920 < browserWidth){ // MAC
-			let totTargetStart = 0;
-			let totTargetEnd = visualTop * 0.5;
-            console.log(crtTop, totTargetEnd)
+	// 	// total
+	// 	if(1920 < browserWidth){ // MAC
+	// 		let totTargetStart = 0;
+	// 		let totTargetEnd = visualTop * 0.5;
+  //           console.log(crtTop, totTargetEnd)
 			
-			if(totTargetStart < crtTop && crtTop < totTargetEnd){
-				setupFlipTot();
-			}else{
-				setZeroTot();
-			}
-		}else{
-			// let totTargetStart = scoreTop * 0.6;
-			// let totTargetEnd = txtTop * 0.75;
-			let totTargetStart = 0;
-			let totTargetEnd = visualTop * 0.6;
+	// 		if(totTargetStart < crtTop && crtTop < totTargetEnd){
+	// 			setupFlipTot();
+	// 		}else{
+	// 			setZeroTot();
+	// 		}
+	// 	}else{
+	// 		// let totTargetStart = scoreTop * 0.6;
+	// 		// let totTargetEnd = txtTop * 0.75;
+	// 		let totTargetStart = 0;
+	// 		let totTargetEnd = visualTop * 0.6;
 			
-			if(totTargetStart < crtTop && crtTop < totTargetEnd){
-				setupFlipTot();
-			}else{
-				setZeroTot();
-			}
-		}
+	// 		if(totTargetStart < crtTop && crtTop < totTargetEnd){
+	// 			setupFlipTot();
+	// 		}else{
+	// 			setZeroTot();
+	// 		}
+	// 	}
 
-		// sub
-		if(1920 < browserWidth){ // MAC
-			// let subTargetStart = visualTop * 0.4;
-			// let subTargetEnd = txtTop * 0.9;
-			let subTargetStart = visualTop * 0.1;
-			let subTargetEnd = visualTop * 0.9;
-			if(subTargetStart < crtTop && crtTop < subTargetEnd){
-				setupFlipSub1();
-				setupFlipSub2();
-			}else{
-				setZeroSub1();
-				setZeroSub2();
-			}
-		}else{
-			// let subTargetStart = visualTop * 0.9;
-			// let subTargetEnd = txtTop * 0.9;
-			let subTargetStart = visualTop * 0.2;
-			let subTargetEnd = visualTop * 0.9;
-			if(subTargetStart < crtTop && crtTop < subTargetEnd){
-				setupFlipSub1();
-				setupFlipSub2();
-			}else{
-				setZeroSub1();
-				setZeroSub2();
-			}
-		}
-	})
+	// 	// sub
+	// 	if(1920 < browserWidth){ // MAC
+	// 		// let subTargetStart = visualTop * 0.4;
+	// 		// let subTargetEnd = txtTop * 0.9;
+	// 		let subTargetStart = visualTop * 0.1;
+	// 		let subTargetEnd = visualTop * 0.9;
+	// 		if(subTargetStart < crtTop && crtTop < subTargetEnd){
+	// 			setupFlipSub1();
+	// 			setupFlipSub2();
+	// 		}else{
+	// 			setZeroSub1();
+	// 			setZeroSub2();
+	// 		}
+	// 	}else{
+	// 		// let subTargetStart = visualTop * 0.9;
+	// 		// let subTargetEnd = txtTop * 0.9;
+	// 		let subTargetStart = visualTop * 0.2;
+	// 		let subTargetEnd = visualTop * 0.9;
+	// 		if(subTargetStart < crtTop && crtTop < subTargetEnd){
+	// 			setupFlipSub1();
+	// 			setupFlipSub2();
+	// 		}else{
+	// 			setZeroSub1();
+	// 			setZeroSub2();
+	// 		}
+	// 	}
+	// })
 
 	// total
 	function setupFlipTot(tick){

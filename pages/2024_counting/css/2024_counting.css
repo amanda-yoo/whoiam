@@ -108,9 +108,11 @@
 	height:69px;
 	border-radius:14px;
 	font-size:62px;
-	font-family:'IAMAPLAYER';
 	line-height:1.1em;
 	text-indent:0.13em;
+}
+.score_wrap .item .tick-flip *{
+	font-family:'IAMAPLAYER';
 }
 .score_wrap .item .tick-flip:nth-child(1){
 	margin-left: 0;
