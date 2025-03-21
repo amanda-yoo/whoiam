@@ -18,7 +18,7 @@
 .preload_contents *{font-family: "Poppins", sans-serif;}
 .preload_contents .text_wrap{position: absolute;top: 50%;left: calc((100% - 1200px)/2);}
 .preload_contents .text_wrap .sub_key{display: block;margin-bottom: 2rem;position: relative;font-size: 2rem;font-weight: 600;color: #fff;opacity: 0;animation: preFadeIn 1s 1s forwards;}
-.preload_contents .text_wrap .sub_key_cover{display: block;content: '';position: absolute;top: 0;left: 0;width: 0;height: 3rem;background-color: #ffe229;animation: preReveal 1s .5s forwards ease-in-out;}
+.preload_contents .text_wrap .sub_key_cover{display: block;content: '';position: absolute;top: -4px;left: 0;width: 0;height: 3rem;background-color: #ffe229;animation: preReveal 1s .5s forwards ease-in-out;}
 .preload_contents .text_wrap .key_msg{font-size: 8rem;font-weight: 600;color: #fff;animation: preFadeIn .8s forwards;}
 .preload_contents .cover_wrap{position: absolute;top: 0;left: 0;width: 100%;height: 100%;background-color: #0134ff;transform: translateX(200%);animation: preCover 4s 1.8s forwards;}
 .preload_contents .cover_wrap .cover_txt{display: flex;justify-content: center;align-items: center;width: 100%;height: 100%;}
@@ -98,12 +98,13 @@
 .who_wrap{overflow: hidden;background-color: #0134ff;}
 .who_wrap h3{color: #fff;}
 .who_conbox{position: relative;}
-.who_conbox p{color: #fff;font-size: 1.8rem;line-height: 1.6em;font-weight: 300;}
-.who_stroke{position: absolute;right: -5%;top: -60%;text-align: right;}
+.who_stroke{position: absolute;right: 0;top: -22rem;text-align: right;}
 .who_stroke p{font-size: 12rem;color: #0134ff;-webkit-text-stroke: 1px rgba(255,255,255,0.3);letter-spacing: -0.06em;line-height: 1em;font-weight: 300;}
 .who_conbox .btn_wrap{margin-top: 4rem;}
 .who_conbox .btn_wrap a{display: inline-block;padding: 1.6rem;border: 1px solid #fff;}
 .who_conbox .btn_wrap a span{font-size: 1.6rem;color: #fff;}
+.who_conbox .who_txt{display: flex;}
+.who_conbox .who_txt p{color: #fff;font-size: 1.8rem;line-height: 1.6em;font-weight: 300;word-break: keep-all;}
 
 /* prj */
 .prj_contents{background-color: #f1f4ff;}
@@ -130,7 +131,7 @@
 
 .prj_list .item .box_tit .badge_wrap{margin-left: -1rem;margin-top: -1rem;padding-bottom: 2rem;}
 .prj_list .item .box_tit .badge_wrap span{display: inline-block;margin-left: 1rem;margin-top: 1rem;padding: 1rem 1.5rem;border-radius: 2rem;background-color: #ffe229;font-size: 1.4rem;font-weight: 700;color: #0134ff;vertical-align: middle;}
-.prj_list .item .box_tit strong{font-size: 4rem;}
+.prj_list .item .box_tit strong{font-size: 4rem;letter-spacing: -0.02em;}
 .prj_list .item .btn_wrap{display: flex;margin-top: 2rem;}
 .prj_list .item .btn_wrap a{display: block;padding: 1rem 2rem;border: 2px solid #0134ff;border-radius: 5rem;font-weight: 700;font-size: 2rem;color: #0134ff;transition: 0.3s;}
 .prj_list .item .btn_wrap a + a{margin-left: 2rem;}
@@ -184,7 +185,7 @@
 
 /* footer */
 .footer{padding-top: 2rem;padding-bottom: 2rem;color: #0134ff;text-align: center;}
-.footer p{font-size: 2rem;}
+.footer p{font-size: 1.6rem;}
 
 
 /* media */
@@ -220,22 +221,23 @@
 	.preload_contents .text_wrap .key_msg{font-size: 6rem;}
 	.preload_contents .cover_wrap .cover_txt p{font-size: 4rem;}
 
+	.who_stroke{display: none;}
+
 	.cover_wrap{height: unset;padding: 15rem 0;}
 	.cover_tit .pub strong{font-size: 3rem;}
 	.cover_tit .eng strong{font-size: 6rem;}
 	.cover_tit .kr{font-size: 2rem;}
 	.motion1{width: 5rem;margin-left: 5px;}
 	.motion2{width: 5rem;margin-left: 2rem;margin-right: 0;}
-	.motion3{width: 6rem;margin-left: -1rem;background: radial-gradient(farthest-side,#0134ff 98%,#0000) 50%/4rem 4rem,  radial-gradient(farthest-side,#0134ff 98%,#0000) 50%/4rem 4rem, radial-gradient(farthest-side,#0134ff 98%,#0000) 50%/80% 80%, #000;}
+	.motion3{width: 7rem;margin-left: -1rem;background: radial-gradient(farthest-side,#0134ff 98%,#0000) 50%/4rem 4rem,  radial-gradient(farthest-side,#0134ff 98%,#0000) 50%/4rem 4rem, radial-gradient(farthest-side,#0134ff 98%,#0000) 50%/80% 80%, #000;}
 	@keyframes motion1-1 {
 		100% {transform: translate(-5px,-5px)}
 	}
-
-	.who_stroke p{visibility: hidden;}
 	
-	.prj_list .item .gsap_container{flex-direction: column;padding: 5rem;}
+	.prj_list .item .gsap_container{flex-direction: column;padding: 4rem;}
 	.prj_list .item .img_wrap{width: 100%;}
 	.prj_list .item .con_wrap{width: 100%;padding-left: 0;padding-top: 4rem;}
 
 	.contact_conbox li a{font-size: 3rem;}
+	.contact_conbox:before, .contact_conbox:after{bottom: auto;top: -15rem;}
 }
