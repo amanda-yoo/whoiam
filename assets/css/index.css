@@ -238,6 +238,7 @@
 	.prj_list .item .img_wrap{width: 100%;}
 	.prj_list .item .con_wrap{width: 100%;padding-left: 0;padding-top: 4rem;}
 
-	.contact_conbox li a{font-size: 3rem;}
+	.contact_conbox li a{font-size: 2.5rem;}
 	.contact_conbox:before, .contact_conbox:after{bottom: auto;top: -15rem;}
+	.contact_conbox li span{width: 3rem;}
 }
